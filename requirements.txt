@@ -1,12 +1,12 @@
-aiohttp==3.8.1 
+aiohttp
 aiofiles
 asyncio
 ffmpeg-python
 pillow
-pyrogram==1.4.7
+pyrogrampyrogram==1.4.16
 hachoir
 lyricsgenius
-py-tgcalls==0.8.6
+py-tgcalls
 wget
 python-dotenv
 youtube-search-python
