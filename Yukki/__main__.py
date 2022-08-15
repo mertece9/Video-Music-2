@@ -115,8 +115,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_1.join_chat("Sohbetskyfall")
-            await ASS_CLI_1.join_chat("Sohbetdestek")
+            await ASS_CLI_1.join_chat("StarBotDestek")
+            await ASS_CLI_1.join_chat("StarBotKanal")
         except:
             pass
         console.print(f"├[red] Asistan 1 Olarak Başladı {ASSNAME1}!")
@@ -134,8 +134,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_2.join_chat("Sohbetskyfall")
-            await ASS_CLI_2.join_chat("Sohbetdestek")
+            await ASS_CLI_2.join_chat("StarBotDestek")
+            await ASS_CLI_2.join_chat("StarBotKanal")
         except:
             pass
         console.print(f"├[red] Asistan 2 Olarak Başladı {ASSNAME2}!")
@@ -153,8 +153,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_3.join_chat("Sohbetskyfall")
-            await ASS_CLI_3.join_chat("Sohbetdestek")
+            await ASS_CLI_3.join_chat("StarBotDestek")
+            await ASS_CLI_3.join_chat("StarBotKanal")
         except:
             pass
         console.print(f"├[red] Asistan 3 Olarak Başladı {ASSNAME3}!")
@@ -172,8 +172,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_4.join_chat("Sohbetskyfall")
-            await ASS_CLI_4.join_chat("Sohbetdestek")
+            await ASS_CLI_4.join_chat("StarBotDestek")
+            await ASS_CLI_4.join_chat("StarBotKanal")
         except:
             pass
         console.print(f"├[red] Asistan 4 Olarak Başladı {ASSNAME4}!")
@@ -191,8 +191,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_5.join_chat("Sohbetskyfall")
-            await ASS_CLI_5.join_chat("Sohbetdestek")
+            await ASS_CLI_5.join_chat("StarBotDestek")
+            await ASS_CLI_5.join_chat("StarBotKanal")
         except:
             pass
         console.print(f"├[red] Asistan 5 Olarak Başladı {ASSNAME5}!")
@@ -249,7 +249,7 @@ async def start_command(_, message):
         name = (message.text.split(None, 1)[1]).lower()
         if name[0] == "s":
             sudoers = await get_sudoers()
-            text = "⭐️<u> **Sahiplerim:**</u>\n"
+            text = "⭐️<u> **Sahipler:**</u>\n"
             sex = 0
             for x in OWNER_ID:
                 try:
@@ -313,26 +313,22 @@ async def start_command(_, message):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-🔍__**𝗩𝗶𝗱𝗲𝗼 𝗣𝗮𝗿𝗰̧𝗮 𝗕𝗶𝗹𝗴𝗶𝗹𝗲𝗿𝗶**__
+🔍__**𝗣𝗮𝗿𝗰̧𝗮 𝗕𝗶𝗹𝗴𝗶𝗹𝗲𝗿𝗶**__
 
 ❇️ 𝐈̇𝐬𝐢𝐦: {title}
 
 ⏳ 𝐒𝐮̈𝐫𝐞: {duration} Mins
-👀 𝐆𝐨̈𝐫𝐮̈𝐧𝐮̈𝐦𝐥𝐞𝐫: `{views}`
-⏰ 𝐘𝐚𝐲𝐢𝐧𝐥𝐚𝐦𝐚 𝐙𝐚𝐦𝐚𝐧𝐢:** {published}
-🎥 𝐊𝐚𝐧𝐚𝐥 𝐀𝐝𝐢: {channel}
-📎 𝐊𝐚𝐧𝐚𝐥 𝐋𝐢𝐧𝐤𝐢: [Visit From Here]({channellink})
 🔗 𝐕𝐢𝐝𝐞𝐨 𝐁𝐚𝐠̆𝐥𝐚𝐧𝐭𝐢𝐬𝐢: [Link]({link})
 
-⚡️ __{BOT_NAME} 𝗧𝗮𝗿𝗮𝗳𝗶𝗻𝗱𝗮𝗻 𝗗𝗲𝘀𝘁𝗲𝗸𝗹𝗲𝗻𝗺𝗲𝗸𝘁𝗲𝗱𝗶𝗿__"""
+"""
             key = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="🎥 Youtube Videosunu İzle", url=f"{link}"
+                            text="🎥 YouTube İzle", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="❌ Kapat", callback_data="close"
+                            text="• Kapat", callback_data="close"
                         ),
                     ],
                 ]
@@ -418,10 +414,10 @@ async def help_button(client, query):
             [
                 [
                     InlineKeyboardButton(
-                        text="↪️ Geri", callback_data="help_back"
+                        text="• Geri", callback_data="help_back"
                     ),
                     InlineKeyboardButton(
-                        text="❌ Kapat", callback_data="close"
+                        text="• Kapat", callback_data="close"
                     ),
                 ],
             ]
