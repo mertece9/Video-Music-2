@@ -18,7 +18,7 @@ from Yukki.Utilities.download import get_formats, get_type
 user_time = {}
 flex = {}
 
-__MODULE__ = "Küresel Yasak"
+__MODULE__ = "Gban"
 __HELP__ = """
 
 **Not:**
@@ -121,16 +121,14 @@ async def boom(_, CallbackQuery):
         thumb_image_path = result["thumbnails"][0]["url"]
         channel = channel = result["channel"]["name"]
         fetched = f"""
-🔍**𝗜̇𝗻𝗱𝗶𝗿𝗶𝗹𝗲𝗻 𝗣𝗮𝗿𝗰̧𝗮**
+🔍**𝗣𝗮𝗿𝗰̧𝗮**
 
 ❇️ 𝗜̇𝘀𝗶𝗺:  **{title}**
 
 ⏳ 𝗦𝘂̈𝗿𝗲𝘀𝗶: **{duration}** 𝗗𝗮𝗸𝗶𝗸𝗮
-👀 𝗚𝗼̈𝗿𝘂̈𝗻𝘂̈𝗺𝗹𝗲𝗿: `**{views}**`
-🎥 𝗞𝗮𝗻𝗮𝗹 𝗔𝗱𝗶: **{channel}**
-🔗 𝗩𝗶𝗱𝗲𝗼 𝗕𝗮𝗴̆𝗹𝗮𝗻𝘁𝗶𝘀𝗶: [Link]({yturl})
+🔗 𝗩𝗶𝗱𝗲𝗼 𝗕𝗮𝗴̆𝗹𝗮𝗻𝘁𝗶𝘀𝗶: [Link]({yturl})})
 
-⚡️ 𝐘𝐨𝐮𝐭𝐮𝐛𝐞 𝐒𝐚𝐭𝐢𝐫 𝐢𝐜̧𝐢 𝐢𝐧𝐝𝐢𝐫𝐦𝐞 **{MUSIC_BOT_NAME}** 𝐭𝐚𝐫𝐚𝐟𝐢𝐧𝐝𝐚𝐧 𝐝𝐞𝐬𝐭𝐞𝐤𝐥𝐞𝐧𝐦𝐞𝐤𝐭𝐞𝐝𝐢𝐫."""
+•> [𝖲𝗍𝖺𝗋 𝖬𝗎𝗓𝗂𝗄 𝖡𝗈𝗍](https://t.me/StarMuzikBot) 𝖳𝖺𝗋𝖺𝖿𝗂𝗇𝖽𝖺𝗇 !"""
     filext = "%(title)s.%(ext)s"
     userdir = os.path.join(os.getcwd(), "downloads", str(user_id))
     if not os.path.isdir(userdir):
