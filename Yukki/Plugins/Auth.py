@@ -9,11 +9,11 @@ from Yukki.Decorators.admins import AdminActual
 from Yukki.Utilities.changers import (alpha_to_int, int_to_alpha,
                                       time_to_seconds)
 
-__MODULE__ = "Kimlik Doğrulama Kullanıcıları"
+__MODULE__ = "ᴀᴜᴛʜ"
 __HELP__ = """
 
 **Not:**
--Kimlik doğrulama kullanıcıları, Yönetici Hakları olmasa bile Sesli Sohbetleri atlayabilir, duraklatabilir, durdurabilir, sürdürebilir.
+-Kimlik doğrulama kullanıcıları, Yönetici olmasa bile Sesli Sohbetleri atlayabilir, duraklatabilir, durdurabilir, sürdürebilir.
 
 
 /auth [Kullanıcı Adı veya İletiyi Yanıtlama] 
