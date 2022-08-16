@@ -8,7 +8,7 @@ from youtubesearchpython import VideosSearch
 
 from Yukki import MUSIC_BOT_NAME, app
 
-__MODULE__ = "Şarkı Sözleri"
+__MODULE__ = "sᴀʀᴋɪ sᴏᴢʟᴇʀɪ"
 __HELP__ = """
 
 /Lyrics [Müzik Adı]
