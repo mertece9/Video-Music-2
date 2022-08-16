@@ -25,7 +25,7 @@ from Yukki.Utilities.paste import isPreviewUp, paste_queue
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
-__MODULE__ = "Sunucu"
+__MODULE__ = "sᴜɴᴜᴄᴜ"
 __HELP__ = f"""
 
 **Not:**
