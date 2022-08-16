@@ -18,7 +18,7 @@ from Yukki.Utilities.assistant import get_assistant_details
 
 loop = asyncio.get_event_loop()
 
-__MODULE__ = "Katıl/Ayrıl"
+__MODULE__ = "ᴋᴀᴛɪʟ / ᴀʏʀɪʟ"
 __HELP__ = """
 
 **Not:**
