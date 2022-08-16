@@ -20,15 +20,16 @@ def logging(mystic):
                     else:
                         what = "Herhangi bir dosyaya cevap verdi."
                 except:
-                    what = "Komut"
+                    what = "KOMUT"
             logger_text = f"""
-__**Yeni {what}**__
+**Yeni {what}**
 
 **Grup:** {message.chat.title} [`{message.chat.id}`]
 **Kullanıcı:** {message.from_user.mention}
 **KullanıcıAdı:** @{message.from_user.username}
 **Kullanıcı ID:** `{message.from_user.id}`
 **Grup Linki:** {chatusername}
+
 **Sorgu:** {message.text}"""
             if LOG_CLIENT != "None":
                 await LOG_CLIENT.send_message(
