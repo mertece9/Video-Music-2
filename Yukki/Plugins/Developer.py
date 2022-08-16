@@ -19,7 +19,7 @@ from Yukki.Utilities.tasks import add_task, rm_task
 
 # Eval and Sh module from WBB
 
-__MODULE__ = "Reklam"
+__MODULE__ = "ʀᴇᴋʟᴀᴍ"
 __HELP__ = """
 **Not:**
 Sadece Yönetici Kullanıcıları için
