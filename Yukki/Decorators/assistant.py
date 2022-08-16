@@ -63,7 +63,7 @@ def AssistantAdd(mystic):
                 [
                     [
                         InlineKeyboardButton(
-                            text="✔️ Unban Assistant",
+                            text="✅ Unban Assistan",
                             callback_data=f"unban_assistant a|{ASS_ID}",
                         )
                     ],
@@ -87,7 +87,7 @@ def AssistantAdd(mystic):
                     pass
                 except Exception as e:
                     await message.reply_text(
-                        f"__Yardımcı katılamadı__\n\n**Sebep**: {e}"
+                        f"**Asistan katılamadı**\n\n**Sebep**: {e}"
                     )
                     return
             else:
@@ -107,7 +107,7 @@ def AssistantAdd(mystic):
                     pass
                 except Exception as e:
                     await message.reply_text(
-                        f"__Yardımcı katılamadı__\n\n**Sebep**: {e}"
+                        f"**Yardımcı katılamadı**\n\n**Sebep**: {e}"
                     )
                     return
         return await mystic(_, message)
