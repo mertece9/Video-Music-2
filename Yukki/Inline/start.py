@@ -36,7 +36,7 @@ def start_pannel():
             ],
             [
                 InlineKeyboardButton(
-                    text=⚙️ ᴀʏᴀʀʟᴀʀ ᴍᴇɴᴜsᴜ", callback_data="settingm"
+                    text="⚙️ ᴀʏᴀʀʟᴀʀ ᴍᴇɴᴜsᴜ", callback_data="settingm"
                 )
             ],
         ]
