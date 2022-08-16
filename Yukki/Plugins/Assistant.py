@@ -11,37 +11,12 @@ from Yukki import ASSISTANT_PREFIX, SUDOERS, app, random_assistant
 from Yukki.Database import get_assistant, save_assistant
 from Yukki.Utilities.assistant import get_assistant_details
 
-__MODULE__ = "Asistan"
+__MODULE__ = "ᴀsɪsᴛᴀɴ"
 __HELP__ = f"""
 
-
+•> Not : Asistan Hesabi Grubunuza Kendiliğinden katılır .
 /checkassistant
-- Sohbetinizin tahsis edilen asistanını kontrol edin
-
-
-**Not:**
-- Sadece Bot Yönetici Kullanıcıları İçin
-
-{ASSISTANT_PREFIX[0]}block [ Kullanıcı İletisini Yanıtlama] 
-- Kullanıcıyı Asistan Hesabından Engeller.
-
-{ASSISTANT_PREFIX[0]}unblock [ Kullanıcı İletisini Yanıtlama] 
-- Kullanıcının Asistan Hesabıyla Olan Engelini Kaldırır.
-
-{ASSISTANT_PREFIX[0]}approve [ Kullanıcı İletisini Yanıtlama] 
-- Kullanıcıyı DM için Onaylar.
-
-{ASSISTANT_PREFIX[0]}disapprove [ Kullanıcı İletisini Yanıtlama] 
-- Kullanıcıyı DM için onaylar.
-
-{ASSISTANT_PREFIX[0]}pfp [ Fotoğrafı Yanıtlama] 
-- Yardımcı hesap PFP'sini değiştirir.
-
-{ASSISTANT_PREFIX[0]}bio [Bio text] 
-- Asistan Hesabının Biyografisini Değiştirir.
-
-/changeassistant [ASS NUMARASI]
-- Önceden tahsis edilmiş asistanı yenisine değiştirme.
+- Sohbetinizin tahsis edilen asistanını kontrol et
 
 /setassistant [ASS NUMARASI veya Rastgele]
 - Sohbet için asistan hesabı ayarlama. 
