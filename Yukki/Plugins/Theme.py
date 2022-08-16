@@ -29,7 +29,7 @@ themes2 = [
     "yellow",
 ]
 
-__MODULE__ = "Tema"
+__MODULE__ = "ᴛᴇᴍᴀ"
 __HELP__ = """
 
 
