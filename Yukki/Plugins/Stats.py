@@ -28,7 +28,7 @@ from Yukki.Inline import stats1, stats2, stats3, stats4, stats5, stats6, stats7
 from Yukki.Plugins import ALL_MODULES
 from Yukki.Utilities.ping import get_readable_time
 
-__MODULE__ = "İstatistik"
+__MODULE__ = "ɪsᴛᴀᴛɪsᴛɪᴋ"
 __HELP__ = """
 
 
