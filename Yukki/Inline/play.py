@@ -77,21 +77,21 @@ def search_markup(
     buttons = [
         [
             InlineKeyboardButton(
-                text=1•", callback_data=f"Yukki {ID1}|{duration1}|{user_id}"
+                text="1•", callback_data=f"Yukki {ID1}|{duration1}|{user_id}"
             ),
             InlineKeyboardButton(
-                text=2•", callback_data=f"Yukki {ID2}|{duration2}|{user_id}"
+                text="2•", callback_data=f"Yukki {ID2}|{duration2}|{user_id}"
             ),
             InlineKeyboardButton(
-                text=3•", callback_data=f"Yukki {ID3}|{duration3}|{user_id}"
+                text="3•", callback_data=f"Yukki {ID3}|{duration3}|{user_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text=4•", callback_data=f"Yukki {ID4}|{duration4}|{user_id}"
+                text="4•", callback_data=f"Yukki {ID4}|{duration4}|{user_id}"
             ),
             InlineKeyboardButton(
-                text=5•", callback_data=f"Yukki {ID5}|{duration5}|{user_id}"
+                text="5•", callback_data=f"Yukki {ID5}|{duration5}|{user_id}"
             ),
         ],
         [
@@ -126,21 +126,21 @@ def search_markup2(
     buttons = [
         [
             InlineKeyboardButton(
-                text=6•",
+                text="6•",
                 callback_data=f"Yukki {ID6}|{duration6}|{user_id}",
             ),
             InlineKeyboardButton(
-                text=7•",
+                text="7•",
                 callback_data=f"Yukki {ID7}|{duration7}|{user_id}",
             ),
             InlineKeyboardButton(
-                text=8•",
+                text="8•",
                 callback_data=f"Yukki {ID8}|{duration8}|{user_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text=9•",
+                text="9•",
                 callback_data=f"Yukki {ID9}|{duration9}|{user_id}",
             ),
             InlineKeyboardButton(
