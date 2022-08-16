@@ -27,7 +27,7 @@ from Yukki.Utilities.ping import get_readable_time
 
 welcome_group = 2
 
-__MODULE__ = "Temel Bilgiler"
+__MODULE__ = "sᴛᴀʀᴛ"
 __HELP__ = """
 
 
