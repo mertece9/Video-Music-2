@@ -210,12 +210,12 @@ def paste_queue_markup(url):
     buttons = [
         [
             InlineKeyboardButton(text="‣", callback_data=f"resumecb"),
-            InlineKeyboardButton(text="❚❚", callback_data=f"pausecb"),
-            InlineKeyboardButton(text="▷", callback_data=f"skipcb"),
-            InlineKeyboardButton(text="☐", callback_data=f"stopcb"),
+            InlineKeyboardButton(text="❙❙", callback_data=f"pausecb"),
+            InlineKeyboardButton(text="‣‣", callback_data=f"skipcb"),
+            InlineKeyboardButton(text="■", callback_data=f"stopcb"),
         ],
-        [InlineKeyboardButton(text="Sıradaki Çalma Listesi", url=f"{url}")],
-        [InlineKeyboardButton(text="❌ Menüyü Kapat", callback_data=f"close")],
+        [InlineKeyboardButton(text="𝖲𝗂𝗋𝖺𝖽𝖺𝗄𝗂 𝖯𝗅𝖺𝗒𝗅𝗂𝗌𝗍", url=f"{url}")],
+        [InlineKeyboardButton(text="• 𝖬𝖾𝗇𝗎 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close")],
     ]
     return buttons
 
@@ -224,12 +224,12 @@ def fetch_playlist(user_name, type, genre, user_id, url):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"Oynat {user_name[:10]}'s {genre} Çalma Listesi",
+                text=f"𝖮𝗒𝗇𝖺𝗍 {user_name[:10]}'s {genre} 𝖯𝗅𝖺𝗒𝗅𝗂𝗌𝗍",
                 callback_data=f"play_playlist {user_id}|{type}|{genre}",
             ),
         ],
-        [InlineKeyboardButton(text="Çalma listesine Göz At", url=f"{url}")],
-        [InlineKeyboardButton(text="❌ Menüyü Kapat", callback_data=f"close")],
+        [InlineKeyboardButton(text="𝖯𝗅𝖺𝗒𝗅𝗂𝗌𝗍 𝖦𝗈𝗓 𝖠𝗍", url=f"{url}")],
+        [InlineKeyboardButton(text="• 𝖬𝖾𝗇𝗎 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close")],
     ]
     return buttons
 
@@ -238,10 +238,10 @@ def delete_playlist_markuup(type, genre):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"Evet! Sil",
+                text=f"𝖤𝖵𝖤𝖳 𝖲𝗂𝗅",
                 callback_data=f"delete_playlist {type}|{genre}",
             ),
-            InlineKeyboardButton(text="Hayır!", callback_data=f"close"),
+            InlineKeyboardButton(text="𝖧𝖠𝖸𝖨𝖱!", callback_data=f"close"),
         ],
     ]
     return buttons
