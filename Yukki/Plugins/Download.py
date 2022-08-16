@@ -18,7 +18,7 @@ from Yukki.Utilities.download import get_formats, get_type
 user_time = {}
 flex = {}
 
-__MODULE__ = "Gban"
+__MODULE__ = "ɢʙᴀɴ"
 __HELP__ = """
 
 **Not:**
