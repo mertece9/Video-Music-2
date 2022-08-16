@@ -8,27 +8,27 @@ def PermissionCheck(mystic):
         a = await app.get_chat_member(message.chat.id, BOT_ID)
         if a.status != "administrator":
             return await message.reply_text(
-                "Bazı izinlerle yönetici olmam gerekiyor:\n"
-                + "\n- **can_manage_voice_chats:** Sesli sohbetleri yönetmek için"
-                + "\n- **can_delete_messages:** Botların Aradığı Atıkları silmek için"
-                + "\n- **can_invite_users**: Asistanı sohbete davet etmek için."
+                "**GEREKEN İZİNLER**:\n"
+                + "\n- Gerekli İzin: **SESLİ SOHBETLERİ YÖNETME**"
+                + "\n- Gerekli İzin: **MESAJLARI SİLME**"
+                + "\n- Gerekli İzin: **BAĞLANTI İLE DAVET ETME**"
             )
         if not a.can_manage_voice_chats:
             await message.reply_text(
-                "Bu eylemi gerçekleştirmek için gerekli izne sahip değilim."
-                + "\n**Permission:** __SESLİ SOHBETLERİ YÖNETİN__"
+                "Gerekli izne sahip değilim."
+                + "\nİZİN: **SESLİ SOHBETLERİ YÖNETME**"
             )
             return
         if not a.can_delete_messages:
             await message.reply_text(
-                "Bu eylemi gerçekleştirmek için gerekli izne sahip değilim."
-                + "\n**Permission:** __MESAJLARI SİL__"
+                "Gerekli izne sahip değilim."
+                + "\nİZİN: **MESAJLARI SİLME"
             )
             return
         if not a.can_invite_users:
             await message.reply_text(
                 "Bu eylemi gerçekleştirmek için gerekli izne sahip değilim."
-                + "\n**Permission:** __BAĞLANTI YOLUYLA KULLANICILARI DAVET ET__"
+                + "\nİZİN: **BAĞLANTI İLE DAVET ETME**"
             )
             return
         return await mystic(_, message)
