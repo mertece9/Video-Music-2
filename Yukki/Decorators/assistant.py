@@ -19,7 +19,7 @@ async def unban_assistant_(_, CallbackQuery):
     a = await app.get_chat_member(CallbackQuery.message.chat.id, BOT_ID)
     if not a.can_restrict_members:
         return await CallbackQuery.answer(
-            "Yasaklama/unban kullanıcı iznim yok. Herhangi bir yöneticiden asistanın grubunu çıkarmasını isteyin.",
+            "Yasaklama kullanıcı iznim yok. Herhangi bir yöneticiden asistanın yasağını kaldırmasını isteyin.",
             show_alert=True,
         )
     else:
@@ -33,7 +33,7 @@ async def unban_assistant_(_, CallbackQuery):
                 show_alert=True,
             )
         return await CallbackQuery.edit_message_text(
-            "Asistan Unbanned. Şimdi müzik çalmasını Deneyin."
+            "Asistan yasağı kalktı. Şimdi müzik çalmasını Deneyin."
         )
 
 
