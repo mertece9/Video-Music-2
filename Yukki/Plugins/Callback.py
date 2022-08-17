@@ -1,4 +1,4 @@
-from import asyncio
+import asyncio
 import os
 import random
 from asyncio import QueueEmpty
