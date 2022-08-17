@@ -59,7 +59,7 @@ async def start_stream(
         final_output = await CallbackQuery.message.reply_photo(
             photo=thumb,
             caption=(
-                f"🎬<b>__Şarkı:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__Süre:__</b> {duration_min} \n💡<b>__Bilgi:__</b> [Ek Bilgi Al](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤<b>__Talep Eden Kişi:__ </b>{CallbackQuery.from_user.mention} \n🚧<b>__Sıraya alıdı__</b> <b>#{position}!</b>"
+                f"▶️<b> sᴀʀᴋɪ : </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⌚<b> sᴜʀᴇ : </b> {duration_min} \n📝<b> ʙɪʟɢɪ : </b> [Ek Bilgi](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n▫️<b>ᴛᴀʟᴇᴘ : </b>{CallbackQuery.from_user.mention} \n🔔<b> sɪʀᴀʏᴀ ᴀʟɪɴᴅɪ : </b> <b>#{position}!</b>"
             ),
             reply_markup=InlineKeyboardMarkup(buttons),
         )
@@ -83,7 +83,7 @@ async def start_stream(
             videoid, CallbackQuery.from_user.id, duration_min, duration_min
         )
         await mystic.delete()
-        cap = f"🎥<b>__Oynatılıyor:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n💡<b>__Bilgi:__</b> [Ek Bilgi Al](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤**__Talep Eden Kişi:__** {CallbackQuery.from_user.mention}"
+        cap = f"▶️<b> ᴏʏɴᴀᴛɪʟɪʏᴏʀ : </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n🔔<b> ʙɪʟɢɪ : </b> [Ek Bilgi](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n▫️ᴛᴀʟᴇᴘ : {CallbackQuery.from_user.mention}"
         final_output = await CallbackQuery.message.reply_photo(
             photo=thumb,
             reply_markup=InlineKeyboardMarkup(buttons),
@@ -132,7 +132,7 @@ async def start_stream_audio(
         final_output = await message.reply_photo(
             photo="Utils/Telegram.JPEG",
             caption=(
-                f"💡<b>Ses Akışı Başladı: </b> [Telegram ile Verilen Ses]({link})\n⏳<b>__Süre:__</b> {duration_min} \n👤<b>__Talep Eden Kişi:__ </b>{message.from_user.mention} \n🚧<b>__Sıraya alındı:__</b> <b>#{position}!</b>"
+                f"▶️<b> ᴀᴋɪs ʙᴀsʟᴀᴛɪʟᴅɪ : </b> [Telegram ile Verilen Ses]({link})\n⌚<b> sᴜʀᴇ : </b> {duration_min} \n▫️<b>ᴛᴀʟᴇᴘ : </b>{message.from_user.mention} \n🔔<b> sɪʀᴀʏᴀ ᴀʟɪɴᴅɪ : </b> <b>#{position}!</b>"
             ),
             reply_markup=audio_markup2,
         )
@@ -156,7 +156,7 @@ async def start_stream_audio(
             videoid, message.from_user.id, duration_min, duration_min
         )
         await mystic.delete()
-        cap = f"🎥<b>__Oynatılıyor:__ </b>[Telegram ile Verilen Ses]({link})\n👤**__Talep Eden Kişi:__** {message.from_user.mention}"
+        cap = f"▶️<b> ᴏʏɴᴀᴛɪʟɪʏᴏʀ : </b>[Telegram ile Verilen Ses]({link})\n▫️ᴛᴀʟᴇᴘ : {message.from_user.mention}"
         final_output = await message.reply_photo(
             photo="Utils/Telegram.JPEG",
             reply_markup=InlineKeyboardMarkup(buttons),
