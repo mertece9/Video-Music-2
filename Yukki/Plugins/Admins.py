@@ -45,7 +45,7 @@ __HELP__ = """
 /atla
 - Sesli sohbette geçerli müzik çalmayı atlama
 
-/son veya end
+/son
 - Müzik çalma işlemini durdurma.
 
 /queue 
