@@ -9,9 +9,9 @@ def PermissionCheck(mystic):
         if a.status != "administrator":
             return await message.reply_text(
                 "**GEREKEN İZİNLER**:\n"
-                + "\n- Gerekli İzin: **SESLİ SOHBETLERİ YÖNETME**"
-                + "\n- Gerekli İzin: **MESAJLARI SİLME**"
-                + "\n- Gerekli İzin: **BAĞLANTI İLE DAVET ETME**"
+                + "\n• **SESLİ SOHBETLERİ YÖNETME**"
+                + "\n• **MESAJLARI SİLME**"
+                + "\n• **BAĞLANTI İLE DAVET ETME**"
             )
         if not a.can_manage_voice_chats:
             await message.reply_text(
