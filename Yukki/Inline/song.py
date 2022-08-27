@@ -16,6 +16,9 @@ def song_markup(videoid, duration, user_id, query, query_type):
         ],
         [
             InlineKeyboardButton(
+                text="• ɢᴇʀɪ", callback_data=f"goback {videoid}|{user_id}"
+            ),
+            InlineKeyboardButton(
                 text="• ᴋᴀᴘᴀᴛ",
                 callback_data=f"forceclose {query}|{user_id}",
             )
