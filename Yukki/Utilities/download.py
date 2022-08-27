@@ -51,35 +51,35 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
         if type == "audio":
             if "audio" in check:
                 j += 1
-                if j == 4:
+                if j == 1:
                     a4 = InlineKeyboardButton(
                         text=f"ᴋᴀʟɪᴛᴇ: ᴅᴜ̈şᴜ̈ᴋ",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
-                if j == 5:
+                if j == 2:
                     a5 = InlineKeyboardButton(
                         text=f"ᴋᴀʟɪᴛᴇ: ᴏʀᴛᴀ",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
-                if j == 6:
+                if j == 3:
                     a6 = InlineKeyboardButton(
                         text=f"ᴋᴀʟɪᴛᴇ: ʏᴜ̈ᴋsᴇᴋ",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
         elif type == "video":
-            if str(135) in check:
+            if str(133) in check:
                 j += 1
                 a3 = InlineKeyboardButton(
                     text=f"ᴋᴀʟɪᴛᴇ: (480)p",
                     callback_data=f"ytdata video||{x['format_id']}||{videoid}",
                 )
-            if str(136) in check:
+            if str(134) in check:
                 j += 1
                 a4 = InlineKeyboardButton(
                     text=f"ᴋᴀʟɪᴛᴇ: (720)p",
                     callback_data=f"ytdata video||{x['format_id']}||{videoid}",
                 )
-            if str(137) in check:
+            if str(135) in check:
                 j += 1
                 a5 = InlineKeyboardButton(
                     text=f"ᴋᴀʟɪᴛᴇ: (1080)p",
