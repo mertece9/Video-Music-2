@@ -49,11 +49,11 @@ def download_markup(videoid, user_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🎵 sᴇs ɪɴᴅɪʀ",
+                text="🔎 sᴀʀᴋɪ ɪɴᴅɪʀ",
                 callback_data=f"gets audio|{videoid}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="📽️ ᴠɪᴅᴇᴏ ɪɴᴅɪʀ",
+                text="🔎 ᴠɪᴅᴇᴏ ɪɴᴅɪʀ",
                 callback_data=f"gets video|{videoid}|{user_id}",
             ),
         ],
