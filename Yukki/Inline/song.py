@@ -10,8 +10,12 @@ def song_markup(videoid, duration, user_id, query, query_type):
                 callback_data=f"song_right B|{query_type}|{query}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="ɪɴᴅɪʀ",
-                callback_data=f"qwertyuiopasdfghjkl {videoid}|{user_id}",
+                text="🔎 sᴀʀᴋɪ ɪɴᴅɪʀ",
+                callback_data=f"gets audio|{videoid}|{user_id}",
+            ),
+            InlineKeyboardButton(
+                text="🔎 ᴠɪᴅᴇᴏ ɪɴᴅɪʀ",
+                callback_data=f"gets video|{videoid}|{user_id}",
             ),
             InlineKeyboardButton(
                 text="❯",
