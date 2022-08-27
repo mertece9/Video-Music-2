@@ -166,14 +166,6 @@ def search_markup2(
 def secondary_markup(videoid, user_id):
     buttons = [
         [
-            InlineKeyboardButton(text="• 𝖣𝖾𝗏𝖺𝗆", callback_data=f"resumecb"),
-            InlineKeyboardButton(text="• 𝖣𝗎𝗋𝖽𝗎𝗋", callback_data=f"pausecb"),
-        ],
-        [ 
-            InlineKeyboardButton(text="• 𝖠𝗍𝗅𝖺", callback_data=f"skipcb"),
-            InlineKeyboardButton(text="• 𝖲𝗈𝗇", callback_data=f"stopcb"),
-        ],
-        [
             InlineKeyboardButton(
                 text="• ᴍᴇɴᴜ", callback_data=f"other {videoid}|{user_id}"
             ),
@@ -185,14 +177,6 @@ def secondary_markup(videoid, user_id):
 
 def secondary_markup2(videoid, user_id):
     buttons = [
-        [
-            InlineKeyboardButton(text="• 𝖣𝖾𝗏𝖺𝗆", callback_data=f"resumecb"),
-            InlineKeyboardButton(text="• 𝖣𝗎𝗋𝖽𝗎𝗋", callback_data=f"pausecb"),
-        ],
-        [
-            InlineKeyboardButton(text="• 𝖠𝗍𝗅𝖺", callback_data=f"skipcb"),
-            InlineKeyboardButton(text="• 𝖲𝗈𝗇", callback_data=f"stopcb"),
-        ],
         [
             InlineKeyboardButton(text="• ᴋᴀᴘᴀᴛ", callback_data=f"close"),
         ],
@@ -206,14 +190,6 @@ def primary_markup(videoid, user_id, current_time, total_time):
     db_mem[videoid]["check"] = 2
     buttons = [
         [
-            InlineKeyboardButton(text="• 𝖣𝖾𝗏𝖺𝗆", callback_data=f"resumecb"),
-            InlineKeyboardButton(text="• 𝖣𝗎𝗋𝖽𝗎𝗋", callback_data=f"pausecb"),
-        ],
-        [
-            InlineKeyboardButton(text="• 𝖠𝗍𝗅𝖺", callback_data=f"skipcb"),
-            InlineKeyboardButton(text="• 𝖲𝗈𝗇", callback_data=f"stopcb"),
-        ],
-        [
             InlineKeyboardButton(
                 text="• ᴍᴇɴᴜ", callback_data=f"other {videoid}|{user_id}"
             ),
@@ -225,14 +201,6 @@ def primary_markup(videoid, user_id, current_time, total_time):
 
 def timer_markup(videoid, user_id, current_time, total_time):
     buttons = [
-        [
-            InlineKeyboardButton(text="• 𝖣𝖾𝗏𝖺𝗆", callback_data=f"resumecb"),
-            InlineKeyboardButton(text="• 𝖣𝗎𝗋𝖽𝗎𝗋", callback_data=f"pausecb"),
-        ],
-        [
-            InlineKeyboardButton(text="• 𝖠𝗍𝗅𝖺", callback_data=f"skipcb"),
-            InlineKeyboardButton(text="• 𝖲𝗈𝗇", callback_data=f"stopcb"),
-        ],
         [
             InlineKeyboardButton(
                 text="• ᴍᴇɴᴜ", callback_data=f"other {videoid}|{user_id}"
@@ -248,14 +216,6 @@ def audio_markup(videoid, user_id, current_time, total_time):
         db_mem[videoid] = {}
     db_mem[videoid]["check"] = 2
     buttons = [
-        [
-            InlineKeyboardButton(text="• 𝖣𝖾𝗏𝖺𝗆", callback_data=f"resumecb"),
-            InlineKeyboardButton(text="• 𝖣𝗎𝗋𝖽𝗎𝗋", callback_data=f"pausecb"),
-        ],
-        [
-            InlineKeyboardButton(text="• 𝖠𝗍𝗅𝖺", callback_data=f"skipcb"),
-            InlineKeyboardButton(text="• 𝖲𝗈𝗇", callback_data=f"stopcb"),
-        ],
         [InlineKeyboardButton(text="• ᴋᴀᴘᴀᴛ", callback_data=f"close")],
     ]
     return buttons
@@ -263,14 +223,6 @@ def audio_markup(videoid, user_id, current_time, total_time):
 
 def audio_timer_markup_start(videoid, user_id, current_time, total_time):
     buttons = [
-        [
-            InlineKeyboardButton(text="• 𝖣𝖾𝗏𝖺𝗆", callback_data=f"resumecb"),
-            InlineKeyboardButton(text="• 𝖣𝗎𝗋𝖽𝗎𝗋", callback_data=f"pausecb"),
-        ],
-        [
-            InlineKeyboardButton(text="• 𝖠𝗍𝗅𝖺", callback_data=f"skipcb"),
-            InlineKeyboardButton(text="• 𝖲𝗈𝗇", callback_data=f"stopcb"),
-        ],
         [InlineKeyboardButton(text="• ᴋᴀᴘᴀᴛ", callback_data=f"close")],
     ]
     return buttons
@@ -278,14 +230,6 @@ def audio_timer_markup_start(videoid, user_id, current_time, total_time):
 
 audio_markup2 = InlineKeyboardMarkup(
     [
-        [
-            InlineKeyboardButton(text="• 𝖣𝖾𝗏𝖺𝗆", callback_data=f"resumecb"),
-            InlineKeyboardButton(text="• 𝖣𝗎𝗋𝖽𝗎𝗋", callback_data=f"pausecb"),
-        ],
-        [
-            InlineKeyboardButton(text="• 𝖠𝗍𝗅𝖺", callback_data=f"skipcb"),
-            InlineKeyboardButton(text="• 𝖲𝗈𝗇", callback_data=f"stopcb"),
-        ],
         [InlineKeyboardButton("• ᴋᴀᴘᴀᴛ", callback_data="close")],
     ]
 )
