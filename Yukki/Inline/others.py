@@ -11,23 +11,23 @@ def others_markup(videoid, user_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🔎 sᴀʀᴋɪ sᴏᴢʟᴇʀɪ",
+                text="🪧 sᴀʀᴋɪ sᴏᴢʟᴇʀɪ",
                 callback_data=f"lyrics {videoid}|{user_id}",
             )
         ],
         [
             InlineKeyboardButton(
-                text="📃 ᴘʟᴀʏʟɪsᴛ ᴇᴋʟᴇ",
+                text="✚ sᴇɴɪɴ ᴘʟᴀʏʟɪsᴛɪɴ",
                 callback_data=f"your_playlist {videoid}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="📑 ɢʀᴜʙ ᴘʟᴀʏʟɪsᴛ ᴇᴋʟᴇ",
+                text="✚ ɢʀᴜʙ ᴘʟᴀʏʟɪsᴛɪ",
                 callback_data=f"group_playlist {videoid}|{user_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="📥 sᴇs | ᴠɪᴅᴇᴏ ɪɴᴅɪʀ",
+                text="📥 sᴀʀᴋɪ | ᴠɪᴅᴇᴏ 📥",
                 callback_data=f"audio_video_download {videoid}|{user_id}",
             )
         ],
