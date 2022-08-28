@@ -6,11 +6,13 @@ def check_markup(user_name, user_id, videoid):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"𝖦𝗋𝗎𝖻 𝖯𝗅𝖺𝗒𝗅𝗂𝗌𝗍",
+                text=f"𝖦𝗋𝗎𝖻𝗎𝗇 𝖯𝗅𝖺𝗒𝗅𝗂𝗌𝗍𝗂",
                 callback_data=f"playlist_check {user_id}|Group|{videoid}",
             ),
+        ],
+        [
             InlineKeyboardButton(
-                text=f"{user_name[:8]} » 𝖯𝗅𝖺𝗒𝗅𝗂𝗌𝗍",
+                text=f"{user_name[:8]} -» 𝖯𝗅𝖺𝗒𝗅𝗂𝗌𝗍𝗂",
                 callback_data=f"playlist_check {user_id}|Personal|{videoid}",
             ),
         ],
@@ -23,11 +25,13 @@ def playlist_markup(user_name, user_id, videoid):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"𝖦𝗋𝗎𝖻 𝖯𝗅𝖺𝗒𝗅𝗂𝗌𝗍",
+                text=f"𝖦𝗋𝗎𝖻𝗎𝗇 𝖯𝗅𝖺𝗒𝗅𝗂𝗌𝗍𝗂",
                 callback_data=f"show_genre {user_id}|Group|{videoid}",
             ),
+        ],
+        [
             InlineKeyboardButton(
-                text=f"{user_name[:8]} ~ 𝖯𝗅𝖺𝗒𝗅𝗂𝗌𝗍",
+                text=f"{user_name[:8]} -» 𝖯𝗅𝖺𝗒𝗅𝗂𝗌𝗍𝗂",
                 callback_data=f"show_genre {user_id}|Personal|{videoid}",
             ),
         ],
