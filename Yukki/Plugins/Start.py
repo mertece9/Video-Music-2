@@ -27,22 +27,6 @@ from Yukki.Utilities.ping import get_readable_time
 
 welcome_group = 2
 
-__MODULE__ = "sᴛᴀʀᴛ"
-__HELP__ = """
-
-
-/start 
-- Botu çalıştır.
-
-
-/help 
-- Komutlar Yardımcı Menüsünü alın.
-
-
-/settings 
-- Ayarları al Komutu.
-"""
-
 
 @app.on_message(filters.new_chat_members, group=welcome_group)
 async def welcome(_, message: Message):
