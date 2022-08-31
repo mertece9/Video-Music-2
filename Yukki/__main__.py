@@ -229,12 +229,11 @@ async def initiate_bot():
     console.print(f"\n[red]Stopping Bot")
 
 
-home_text_pm = f"""𝗠𝗲𝗿𝗵𝗮𝗯𝗮 ,
-𝗕𝗲𝗻𝗶𝗺 𝗔𝗱𝗶𝗺 {BOT_NAME}.
+home_text_pm = f"""🪧 𝗠𝗲𝗿𝗵𝗮𝗯𝗮 ,
 
-𝗕𝗮𝘇𝗶 𝗸𝘂𝗹𝗹𝗮𝗻𝗶𝘀̧𝗹𝗶 𝗼̈𝘇𝗲𝗹𝗹𝗶𝗸𝗹𝗲𝗿𝗲 𝘀𝗮𝗵𝗶𝗽 𝗯𝗶𝗿 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗠𝘂̈𝘇𝗶𝗸 + 𝗩𝗶𝗱𝗲𝗼 𝗔𝗸𝗶𝘀̧𝗶 𝗯𝗼𝘁𝘂𝘆𝘂𝗺.
+🗯️ 𝗧𝗲𝗵𝗹𝗶𝗸𝗲𝗹𝗶 𝗼̈𝘇𝗲𝗹𝗹𝗶𝗸𝗹𝗲𝗿𝗲 𝘀𝗮𝗵𝗶𝗽 𝗯𝗶𝗿 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗠𝘂̈𝘇𝗶𝗸 + 𝗩𝗶𝗱𝗲𝗼 𝗔𝗸𝗶𝘀̧𝗶 𝗯𝗼𝘁𝘂𝘆𝘂𝗺.
 
-𝗧𝘂̈𝗺 𝗸𝗼𝗺𝘂𝘁𝗹𝗮𝗿𝗶𝗺 𝗶𝗹𝗲 𝗸𝘂𝗹𝗹𝗮𝗻𝗶𝗹𝗮𝗯𝗶𝗹𝗶𝗿𝘀𝗶𝗻: / """
+✅ 𝗧𝘂̈𝗺 𝗞𝗼𝗺𝘂𝘁𝗹𝗮𝗿 𝗕𝘂𝘁𝗼𝗻𝘂𝗻𝗮 𝗧𝛊𝗸𝗹𝗮𝘆𝛊𝗻 ."""
 
 
 @app.on_message(filters.command("help") & filters.private)
@@ -368,7 +367,7 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """🪧 {first_name}
+        """🪧 𝐌𝐞𝐫𝐡𝐚𝐛𝐚 {first_name}
 """.format(
             first_name=name
         ),
@@ -390,7 +389,7 @@ async def help_button(client, query):
     next_match = re.match(r"help_next\((.+?)\)", query.data)
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
-    top_text = f"""🪧 {query.from_user.first_name},
+    top_text = f"""🪧 𝐌𝐞𝐫𝐡𝐚𝐛𝐚 {query.from_user.first_name}
  """
     if mod_match:
         module = mod_match.group(1)
