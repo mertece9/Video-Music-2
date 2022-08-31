@@ -32,20 +32,6 @@ from Yukki.Utilities.youtube import (get_m3u8, get_yt_info_id,
 
 loop = asyncio.get_event_loop()
 
-__MODULE__ = "ᴠɪᴅᴇᴏ"
-__HELP__ = f"""
-
-/oynat [Herhangi bir Videoyu Yanıtla] veya [YT Bağlantısı] veya [Müzik Adı]
-- Sesli Sohbette Video Akışı
-
-**Sudo Kullanıcısı İçin:-**
-
-/set_video_limit [Sohbet Sayısı]
-- Bir seferde Görüntülü Aramalar için izin verilen maksimum Sohbet Sayısını ayarlayın.
-
-
-"""
-
 
 @app.on_callback_query(filters.regex(pattern=r"Yukki"))
 async def choose_playmode(_, CallbackQuery):
