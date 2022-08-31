@@ -29,17 +29,6 @@ themes2 = [
     "yellow",
 ]
 
-__MODULE__ = "ᴛᴇᴍᴀ"
-__HELP__ = """
-
-
-/settheme
-- Küçük resimler için tema ayarlama.
-
-/theme
-- Sohbetiniz için Tema'ya bakın.
-"""
-
 
 @app.on_message(
     filters.command(["settheme", f"settheme@{BOT_USERNAME}"]) & filters.group
