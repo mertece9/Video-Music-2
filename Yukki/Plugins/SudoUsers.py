@@ -16,32 +16,6 @@ from Yukki.Database import (add_gban_user, add_off, add_on, add_sudo,
                             remove_gban_user, remove_served_chat, remove_sudo,
                             set_video_limit)
 
-__MODULE__ = "sᴜᴅᴏ"
-__HELP__ = """
-
-
-/sudolistname 
- Botun sudo kullanıcı listesini kontrol edin. 
- 
- 
-**Not:**
-Sadece Sudo Kullanıcıları için. 
-
-/addsudo [Kullanıcı adı veya Kullanıcıya yanıt]
-- Botun Sudo Kullanıcılarına Bir Kullanıcı Eklemek İçin.
-
-/delsudo [Kullanıcı adı veya Kullanıcıya yanıt]
-- Bir Kullanıcıyı Botun Sudo Kullanıcılarından Kaldırmak İçin.
-
-/maintenance [enable / disable]
-- Etkinleştirildiğinde Bot bakım moduna geçer. Artık kimse müzik çalamaz!
-
-/logger [enable / disable]
-- Etkinleştirildiğinde Bot, aranan sorguları logger grubunda günlüğe kaydeder.
-
-/clean
-- Geçici Dosyaları ve Günlükleri temizleyin.
-"""
 # Add Sudo Users!
 
 
