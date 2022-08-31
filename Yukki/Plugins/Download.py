@@ -18,19 +18,6 @@ from Yukki.Utilities.download import get_formats, get_type
 user_time = {}
 flex = {}
 
-__MODULE__ = "ɢʙᴀɴ"
-__HELP__ = """
-
-**Not:**
-Sadece Yönetici Kullanıcıları İçin.
-
-/gban [Kullanıcı adı veya Kullanıcıya yanıt verme]
-- Bot'un Sunulan Sohbetleri'nde bir kullanıcıyı genel olarak yasaklama ve kullanıcının bot komutlarını kullanmasını engelleme.
-
-/ungban [Kullanıcı adı veya Kullanıcıya yanıt verme]
-- Kullanıcıyı Bot'un GBan Listesinden kaldırma.
-"""
-
 
 @app.on_callback_query(filters.regex("close"))
 async def closed(_, query: CallbackQuery):
