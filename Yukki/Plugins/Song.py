@@ -15,17 +15,6 @@ from Yukki.Utilities.youtube import get_yt_info_query, get_yt_info_query_slider
 
 loop = asyncio.get_event_loop()
 
-__MODULE__ = "ʙᴜʟ"
-__HELP__ = """
-
-
-/bul [Youtube URL'si veya Arama Sorgusu] 
-- Belirli sorguyu ses veya video formatında indirin.
-
-
-
-"""
-
 
 @app.on_message(
     filters.command(["bul", f"song@{BOT_USERNAME}"])
