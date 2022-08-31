@@ -36,30 +36,54 @@ __MODULE__ = "sᴇsʟɪ sᴏʜʙᴇᴛ"
 __HELP__ = """
 
 
-/durdur
-- Sesli sohbette çalan müziği duraklatma.
+» /bul 
+    - **ᴍᴜᴢɪᴋ & ᴠɪᴅᴇᴏ ɪɴᴅɪʀ .**
 
-/devam
-- Sesli sohbette duraklatılmış müziği sürdürme.
+» /oynat 
+    - **ᴍᴜᴢɪᴋ ᴏʏɴᴀᴛ .**
 
-/atla
-- Sesli sohbette geçerli müzik çalmayı atlama
+» /durdur
+    - **ᴍᴜᴢɪɢɪ ᴅᴜʀᴅᴜʀ .**
 
-/son
-- Müzik çalma işlemini durdurma.
+» /devam 
+    - **ᴍᴜᴢɪɢɪ sᴜʀᴅᴜʀ .**
 
-/queue 
-- Sıra listesini denetle.
+» /atla
+    - **ᴍᴜᴢɪɢɪ ᴀᴛʟᴀ .**
+
+» /son
+    - **ᴍᴜᴢɪɢɪ sᴏɴʟᴀɴᴅɪʀ .**
+
+» /auth
+    - **ʙᴏᴛ ʏᴏɴᴇᴛɪᴄɪsɪ ᴇᴋʟᴇ .**
+
+» /unauth
+    - **ʏᴏɴᴇᴛɪᴄɪ ʏᴇᴛᴋɪsɪɴɪ ᴀʟ .**
 
 
-**Note:**
-Sadece Yönetici Kullanıcıları İçin
+🪧 /oynat **ᴋᴏᴍᴜᴛᴜɴᴜ ᴋᴜʟʟᴀɴɪɴ, ᴀsɪsᴛᴀɴ ɢʀᴜʙᴀ ᴋᴇɴᴅɪsɪ ᴋᴀᴛɪʟɪʀ . . .**
 
-/activevc
-- Botdaki etkin sesli sohbetleri kontrol edin.
 
-/activevideo
-- Botta etkin görüntülü aramaları denetleme.
+» /settheme ( renk )
+    - sᴏʜʙᴇᴛɪɴɪᴢ ɪᴄ̧ɪɴ ʙɪʀ ᴛᴇᴍᴀ ᴏʟᴜsᴛᴜʀᴜɴ . . .
+
+🪧 ᴏʀɴᴇᴋ ʀᴇɴᴋʟᴇʀ •>
+blue , black , red , green , grey , orange , pink , yellow .
+
+
+» /playplaylist 
+    - **ᴋᴀʏɪᴛʟɪ ᴄ̧ᴀʟᴍᴀ ʟɪsᴛᴇɴɪᴢɪ ᴏʏɴᴀᴛɪɴ .**
+
+» /playlist
+    - **ᴋᴀʏɪᴛʟɪ ᴄ̧ᴀʟᴍᴀ ʟɪsᴛᴇɴɪᴢɪ ᴏɢʀᴇɴɪɴ .**
+
+» /delmyplaylist
+    - **ᴋᴀʏɪᴛʟɪ ᴄ̧ᴀʟᴍᴀ ʟɪsᴛᴇɴɪᴢɪ sɪʟɪɴ .**
+
+
+/delgroupplaylist
+    - **ᴋᴀʏɪᴛʟɪ ɢʀᴜʙ ᴄ̧ᴀʟᴍᴀ ʟɪsᴛᴇɴɪᴢɪ sɪʟɪɴ .**
+
 """
 
 
