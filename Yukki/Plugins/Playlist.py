@@ -15,26 +15,6 @@ from Yukki.Inline import (add_genre_markup, check_genre_markup, check_markup,
                           others_markup, play_genre_playlist, playlist_markup,
                           third_playlist_markup)
 
-__MODULE__ = "ᴘʟᴀʏʟɪsᴛ"
-__HELP__ = """
-
-
-/playplaylist 
-- Kaydedilmiş Çalma Listenizi oynatmaya başlayın.
-
-
-/playlist 
-- Sunucularda Kayıtlı Çalma Listenizi Denetleme.
-
-
-/delmyplaylist
-- Çalma listenizdeki kaydedilmiş müzikleri silme
-
-
-/delgroupplaylist
-- Grubunuzun çalma listesindeki kaydedilmiş müzikleri silme [Yönetici Hakları Gerektirir.]
-"""
-
 
 @app.on_message(filters.command("playplaylist") & filters.group)
 @checker
