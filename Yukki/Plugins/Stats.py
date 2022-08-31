@@ -28,15 +28,6 @@ from Yukki.Inline import stats1, stats2, stats3, stats4, stats5, stats6, stats7
 from Yukki.Plugins import ALL_MODULES
 from Yukki.Utilities.ping import get_readable_time
 
-__MODULE__ = "ɪsᴛᴀᴛɪsᴛɪᴋ"
-__HELP__ = """
-
-
-/stats
-- Bot istatistiklerini kontrol edin.
-- MongoDB , Asistan, Sistem vb. Statüsünü alır
-"""
-
 
 async def bot_sys_stats():
     bot_uptime = int(time.time() - boottime)
