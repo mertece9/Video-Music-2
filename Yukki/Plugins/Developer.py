@@ -19,21 +19,18 @@ from Yukki.Utilities.tasks import add_task, rm_task
 
 # Eval and Sh module from WBB
 
-__MODULE__ = "ʀᴇᴋʟᴀᴍ"
+__MODULE__ = "🪧 ʀᴇᴋʟᴀᴍ"
 __HELP__ = """
 **Not:**
-Sadece Yönetici Kullanıcıları için
+•> **Sadece Sahip için**
 
 
-/reklam [Mesaj veya Mesaja Cevap Verme]
-- Bot'un Servis Sohbetlerine herhangi bir mesaj yayınlayın.
+•> /reklam [ **Mesaj** ]
+    - **Bulunduğu Sohbetlerde Reklam Verir .**
 
 
-/reklam_pin [Mesaj veya Mesaja Cevap Verme]
-- Sohbete Sabitlenen mesajla Botun Servis Edilen Sohbetlerine herhangi bir mesaj yayınlayın [Devre Dışı Bildirimler].
-
-/broadcast_pin_loud [Mesaj veya Mesaja Cevap Verme]
-- Herhangi bir mesajı Botun Servis Edilen Sohbetlerine yayınlayın ve mesaj sohbete Sabitlenir [Etkin Bildirimler].
+•> /reklam_pin [ Mesaj ]
+    - **Verilen Reklamı Sohbetlerde Sabitler .**
 """
 
 
