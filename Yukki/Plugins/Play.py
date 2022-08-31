@@ -111,7 +111,7 @@ async def play(_, message: Message):
         limit = await get_video_limit(141414)
         if not limit:
             return await message.reply_text(
-                "𝗚𝗼̈𝗿𝘂̈𝗻𝘁𝘂̈𝗹𝘂̈ 𝗔𝗿𝗮𝗺𝗮𝗹𝗮𝗿 𝗶𝗰̧𝗶𝗻 𝗟𝗶𝗺𝗶𝘁 𝗧𝗮𝗻𝗶𝗺𝗹𝗮𝗻𝗺𝗮𝗱𝗶\n│\n╰ /set_video_limit [𝐘𝐚𝐥𝐧𝐢𝐳𝐜𝐚 𝐁𝐨𝐭 𝐘𝐨̈𝐧𝐞𝐭𝐢𝐜𝐢 𝐊𝐮𝐥𝐥𝐚𝐧𝐢𝐜𝐢𝐥𝐚𝐫𝐢] 𝐭𝐚𝐫𝐚𝐟𝐢𝐧𝐝𝐚𝐧 𝐁𝐨𝐭𝐭𝐚 𝐢𝐳𝐢𝐧 𝐯𝐞𝐫𝐢𝐥𝐞𝐧 𝐌𝐚𝐤𝐬𝐢𝐦𝐮𝐦 𝐆𝐨̈𝐫𝐮̈𝐧𝐭𝐮̈𝐥𝐮̈ 𝐀𝐫𝐚𝐦𝐚 𝐒𝐚𝐲𝐢𝐬𝐢 𝐢𝐜̧𝐢𝐧 𝐛𝐢𝐫 𝐒𝐢𝐧𝐢𝐫 𝐁𝐞𝐥𝐢𝐫𝐥𝐞𝐲𝐢𝐧."
+                "𝗚𝗼̈𝗿𝘂̈𝗻𝘁𝘂̈𝗹𝘂̈ 𝗔𝗿𝗮𝗺𝗮𝗹𝗮𝗿 𝗶𝗰̧𝗶𝗻 𝗟𝗶𝗺𝗶𝘁 𝗧𝗮𝗻𝗶𝗺𝗹𝗮𝗻𝗺𝗮𝗱𝗶\n│\n╰ /limit [𝐘𝐚𝐥𝐧𝐢𝐳𝐜𝐚 𝐁𝐨𝐭 𝐘𝐨̈𝐧𝐞𝐭𝐢𝐜𝐢 𝐊𝐮𝐥𝐥𝐚𝐧𝐢𝐜𝐢𝐥𝐚𝐫𝐢] 𝐭𝐚𝐫𝐚𝐟𝐢𝐧𝐝𝐚𝐧 𝐁𝐨𝐭𝐭𝐚 𝐢𝐳𝐢𝐧 𝐯𝐞𝐫𝐢𝐥𝐞𝐧 𝐌𝐚𝐤𝐬𝐢𝐦𝐮𝐦 𝐆𝐨̈𝐫𝐮̈𝐧𝐭𝐮̈𝐥𝐮̈ 𝐀𝐫𝐚𝐦𝐚 𝐒𝐚𝐲𝐢𝐬𝐢 𝐢𝐜̧𝐢𝐧 𝐛𝐢𝐫 𝐒𝐢𝐧𝐢𝐫 𝐁𝐞𝐥𝐢𝐫𝐥𝐞𝐲𝐢𝐧."
             )
         count = len(await get_active_video_chats())
         if int(count) == int(limit):
@@ -122,7 +122,7 @@ async def play(_, message: Message):
                     "𝐎̈𝐳𝐮̈𝐫 𝐝𝐢𝐥𝐞𝐫𝐢𝐦! 𝐁𝐨𝐭, 𝐂𝐏𝐔 𝐚𝐬̧𝐢𝐫𝐢 𝐲𝐮̈𝐤𝐥𝐞𝐧𝐦𝐞 𝐬𝐨𝐫𝐮𝐧𝐥𝐚𝐫𝐢 𝐧𝐞𝐝𝐞𝐧𝐢𝐲𝐥𝐞 𝐲𝐚𝐥𝐧𝐢𝐳𝐜𝐚 𝐬𝐢𝐧𝐢𝐫𝐥𝐢 𝐬𝐚𝐲𝐢𝐝𝐚 𝐠𝐨̈𝐫𝐮̈𝐧𝐭𝐮̈𝐥𝐮̈ 𝐠𝐨̈𝐫𝐮̈𝐬̧𝐦𝐞𝐲𝐞 𝐢𝐳𝐢𝐧 𝐯𝐞𝐫𝐢𝐫. 𝐃𝐢𝐠̆𝐞𝐫 𝐛𝐢𝐫𝐜̧𝐨𝐤 𝐬𝐨𝐡𝐛𝐞𝐭 𝐬̧𝐮 𝐚𝐧𝐝𝐚 𝐠𝐨̈𝐫𝐮̈𝐧𝐭𝐮̈𝐥𝐮̈ 𝐠𝐨̈𝐫𝐮̈𝐬̧𝐦𝐞 𝐤𝐮𝐥𝐥𝐚𝐧𝐢𝐲𝐨𝐫. 𝐒𝐞𝐬𝐞 𝐠𝐞𝐜̧𝐦𝐞𝐲𝐢 𝐝𝐞𝐧𝐞𝐲𝐢𝐧 𝐯𝐞𝐲𝐚 𝐝𝐚𝐡𝐚 𝐬𝐨𝐧𝐫𝐚 𝐭𝐞𝐤𝐫𝐚𝐫 𝐝𝐞𝐧𝐞𝐲𝐢𝐧"
                 )
         mystic = await message.reply_text(
-            "•>Lütfen bekleyiniz** !"
+            "•> **Lütfen bekleyiniz** !"
         )
         try:
             read = db_mem[message.chat.id]["live_check"]
@@ -158,7 +158,7 @@ async def play(_, message: Message):
         buttons = url_markup2(videoid, duration_min, message.from_user.id)
         return await message.reply_photo(
             photo=thumb,
-            caption=f"▶️ ɪsɪᴍ : **{title}**\n\n⌚ sᴜʀᴇ : **{duration_min}** DK\n\n[Video Hakkında Bilgi Alın](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
+            caption=f"▶️ **ɪsɪᴍ** : **{title}**\n\n⌚ **sᴜʀᴇ** : **{duration_min}** DK\n\n[Video Hakkında Bilgi Alın](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
@@ -174,7 +174,7 @@ async def play(_, message: Message):
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
             return
-        mystic = await message.reply_text("🔎")
+        mystic = await message.reply_text("•> **ᴀʀᴀɴɪʏᴏʀ** .")
         query = message.text.split(None, 1)[1]
         (
             title,
@@ -189,7 +189,7 @@ async def play(_, message: Message):
         )
         return await message.reply_photo(
             photo=thumb,
-            caption=f"▶️ ɪsɪᴍ : **{title}**\n\n⌚ sᴜʀᴇ : **{duration_min}** DK\n\n[Video Hakkında Ek Bilgi Alın](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
+            caption=f"▶️ **ɪsɪᴍ** : **{title}**\n\n⌚ **sᴜʀᴇ** : **{duration_min}** DK\n\n[Video Hakkında Ek Bilgi Alın](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
 
@@ -232,7 +232,7 @@ async def Music_Stream(_, CallbackQuery):
         )
     await CallbackQuery.answer(f"İşleme alındı:- {title[:20]}", show_alert=True)
     mystic = await CallbackQuery.message.reply_text(
-        f"**{MUSIC_BOT_NAME}** İndiriyorum\n│\n🎵 İsim: {title[:50]}\n│\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
+        f"**{MUSIC_BOT_NAME}** İndiriyorum\n│\n🪧 İsim : {title[:50]}\n│\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
     )
     downloaded_file = await loop.run_in_executor(
         None, download, videoid, mystic, title
@@ -377,7 +377,7 @@ async def slider_query_results(_, CallbackQuery):
         )
         med = InputMediaPhoto(
             media=thumb,
-            caption=f"▶️ ɪsɪᴍ : **{title}**\n\n⌚ sᴜʀᴇ : **{duration_min}** DK\n\n[Video Hakkında Ek Bilgi Alın](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
+            caption=f"▶️ **ɪsɪᴍ** : **{title}**\n\n⌚ **sᴜʀᴇ** : **{duration_min}** DK\n\n[Video Hakkında Ek Bilgi Alın](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
@@ -400,7 +400,7 @@ async def slider_query_results(_, CallbackQuery):
         )
         med = InputMediaPhoto(
             media=thumb,
-            caption=f"▶️ ɪsɪᴍ : **{title}**\n\n⌚ sᴜʀᴇ : **{duration_min}** DK\n\n[Video Hakkında Ek Bilgi Alın](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
+            caption=f"▶️ **ɪsɪᴍ** : **{title}**\n\n⌚ **sᴜʀᴇ** : **{duration_min}** DK\n\n[Video Hakkında Ek Bilgi Alın](https://t.me/{BOT_USERNAME}?start=info_{videoid})",
         )
         return await CallbackQuery.edit_message_media(
             media=med, reply_markup=InlineKeyboardMarkup(buttons)
