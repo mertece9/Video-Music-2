@@ -9,23 +9,6 @@ from Yukki.Decorators.admins import AdminActual
 from Yukki.Utilities.changers import (alpha_to_int, int_to_alpha,
                                       time_to_seconds)
 
-__MODULE__ = "ᴀᴜᴛʜ"
-__HELP__ = """
-
-**Not:**
--Kimlik doğrulama kullanıcıları, Yönetici olmasa bile Sesli Sohbetleri atlayabilir, duraklatabilir, durdurabilir, sürdürebilir.
-
-
-/auth [Kullanıcı Adı veya İletiyi Yanıtlama] 
-- Grubun AUTH LİSTESİ'ne kullanıcı ekleme.
-
-/unauth [Kullanıcı Adı veya İletiyi Yanıtlama] 
-- Kullanıcıyı grubun Yönetici Listesinden kaldırma.
-
-/authusers 
-- Grubun AUTH (Yönetici) Listesini denetleyin.
-"""
-
 
 @app.on_message(filters.command("auth") & filters.group)
 @AdminActual
