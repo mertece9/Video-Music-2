@@ -11,17 +11,6 @@ from Yukki import ASSISTANT_PREFIX, SUDOERS, app, random_assistant
 from Yukki.Database import get_assistant, save_assistant
 from Yukki.Utilities.assistant import get_assistant_details
 
-__MODULE__ = "ᴀsɪsᴛᴀɴ"
-__HELP__ = f"""
-
-•> Not : Asistan Hesabi Grubunuza Kendiliğinden katılır .
-/checkassistant
-- Sohbetinizin tahsis edilen asistanını kontrol et
-
-/setassistant [ASS NUMARASI veya Rastgele]
-- Sohbet için asistan hesabı ayarlama. 
-"""
-
 
 ass_num_list = ["1", "2", "3", "4", "5"]
 
