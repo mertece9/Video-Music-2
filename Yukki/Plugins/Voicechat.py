@@ -18,24 +18,6 @@ from Yukki.Utilities.assistant import get_assistant_details
 
 loop = asyncio.get_event_loop()
 
-__MODULE__ = "ᴋᴀᴛɪʟ / ᴀʏʀɪʟ"
-__HELP__ = """
-
-**Not:**
-Sadece Sudo Kullanıcıları İçin
-
-
-/joinassistant [Sohbet Kullanıcı Adı veya Sohbet Kimliği]
-- Gruba yardımcı katılma.
-
-
-/leaveassistant [Sohbet Kullanıcı Adı veya Sohbet Kimliği]
-- Asistan belirli bir gruptan ayrılacak.
-
-
-/leavebot [Sohbet Kullanıcı Adı veya Sohbet Kimliği]
-- Bot belirli bir sohbeti terk edecek.
-"""
 
 @app.on_callback_query(filters.regex("gback_list_chose_stream"))
 async def gback_list_chose_stream(_, CallbackQuery):
