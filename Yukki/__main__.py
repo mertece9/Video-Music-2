@@ -87,7 +87,7 @@ async def initiate_bot():
     try:
         await app.send_message(
             LOG_GROUP_ID,
-            "<b>Tebrikler!! Müzik Botu başarıyla başladı!</b>",
+            "<b>🪧 Müzik Botu başarıyla başladı!</b>",
         )
     except Exception as e:
         print(
@@ -313,8 +313,6 @@ async def start_command(_, message):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-🔍__**𝗣𝗮𝗿𝗰̧𝗮 𝗕𝗶𝗹𝗴𝗶𝗹𝗲𝗿𝗶**__
-
 ❇️ 𝐈̇𝐬𝐢𝐦: {title}
 
 ⏳ 𝐒𝐮̈𝐫𝐞: {duration} Mins
@@ -370,11 +368,7 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """𝗠𝗲𝗿𝗵𝗮𝗯𝗮 {first_name},
-
-𝗗𝗮𝗵𝗮 𝗳𝗮𝘇𝗹𝗮 𝗯𝗶𝗹𝗴𝗶 𝗶𝗰̧𝗶𝗻 𝗱𝘂̈𝗴̆𝗺𝗲𝗹𝗲𝗿𝗲 𝘁𝗶𝗸𝗹𝗮𝘆𝗶𝗻.
-
-𝗧𝘂̈𝗺 𝗸𝗼𝗺𝘂𝘁𝗹𝗮𝗿𝗶𝗺 𝗶𝗹𝗲 𝗸𝘂𝗹𝗹𝗮𝗻𝗮𝗯𝗶𝗹𝗶𝗿𝘀𝗶𝗻: /
+        """🪧 {first_name}
 """.format(
             first_name=name
         ),
@@ -396,17 +390,13 @@ async def help_button(client, query):
     next_match = re.match(r"help_next\((.+?)\)", query.data)
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
-    top_text = f"""𝗠𝗲𝗿𝗵𝗮𝗯𝗮 {query.from_user.first_name},
-
-𝗗𝗮𝗵𝗮 𝗳𝗮𝘇𝗹𝗮 𝗯𝗶𝗹𝗴𝗶 𝗶𝗰̧𝗶𝗻 𝗱𝘂̈𝗴̆𝗺𝗲𝗹𝗲𝗿𝗲 𝘁𝗶𝗸𝗹𝗮𝘆𝗶𝗻.
-
-𝗧𝘂̈𝗺 𝗸𝗼𝗺𝘂𝘁𝗹𝗮𝗿𝗶𝗺 𝗶𝗹𝗲 𝗸𝘂𝗹𝗹𝗮𝗻𝗮𝗯𝗶𝗹𝗶𝗿𝘀𝗶𝗻: /
+    top_text = f"""🪧 {query.from_user.first_name},
  """
     if mod_match:
         module = mod_match.group(1)
         text = (
             "{} **{}**:\n".format(
-                "𝗜̇𝘀̧𝘁𝗲 𝗯𝘂𝗻𝘂𝗻 𝗶𝗰̧𝗶𝗻 𝘆𝗮𝗿𝗱𝗶𝗺", HELPABLE[module].__MODULE__
+                "𝗜̇𝘀̧𝘁𝗲 𝗯𝘂𝗻𝘂𝗻 𝗶𝗰̧𝗶𝗻 𝘆𝗮𝗿𝗱𝗶𝗺"\n\n, HELPABLE[module].__MODULE__
             )
             + HELPABLE[module].__HELP__
         )
