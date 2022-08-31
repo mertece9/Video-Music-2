@@ -25,33 +25,6 @@ from Yukki.Utilities.paste import isPreviewUp, paste_queue
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
-__MODULE__ = "sᴜɴᴜᴄᴜ"
-__HELP__ = f"""
-
-**Not:**
-**Sadece Sudo Kullanıcıları İçin**
-
-/get_log
-- Heroku'dan son 100 satırın günlüğünü alın.
-
-/get_var
-- Heroku veya .env'den yapılandırma var'ı almak.
-
-/del_var
-- Heroku veya .env üzerindeki herhangi bir var'ı silin.
-
-/set_var [Var Adı] [Değer]
-- Heroku veya .env üzerinde bir Var ayarlayın veya Var Güncelleştirin. Var'ı ve Değerini bir boşlukla ayırın.
-
-/usage
-- Dyno Kullanımını Alıp Alın.
-
-/update
-- Botunuzu Güncelleyin.
-
-/restart 
-- Botu Yeniden Başlat [Tüm indirmeler, önbellek, ham dosyalar da temizlenecek]. 
-"""
 
 
 XCB = [
