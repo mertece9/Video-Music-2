@@ -16,7 +16,7 @@ from Yukki.Inline import (add_genre_markup, check_genre_markup, check_markup,
                           third_playlist_markup)
 
 
-@app.on_message(filters.command("playplaylist") & filters.group)
+@app.on_message(filters.command("snsnsjs") & filters.group)
 @checker
 @PermissionCheck
 @AssistantAdd
@@ -86,7 +86,7 @@ async def play_playlist_cmd(_, message):
         )
         return 
 
-@app.on_message(filters.command("playlist") & filters.group) 
+@app.on_message(filters.command("sndnej") & filters.group) 
 @checker
 @PermissionCheck
 @AssistantAdd
@@ -151,7 +151,7 @@ options_Genre = [
 ]
 
 
-@app.on_message(filters.command("delmyplaylist") & filters.group)
+@app.on_message(filters.command("sbsnd") & filters.group)
 async def del_cmd(_, message):
     usage = f"𝗞𝘂𝗹𝗹𝗮𝗻𝗶𝗺𝗶:\n│\n╰/delmyplaylist [𝗧𝘂̈𝗿] [𝟭-𝟯𝟬 𝗮𝗿𝗮𝘀𝗶 𝘀𝗮𝘆𝗶𝗹𝗮𝗿] ( 𝗖̧𝗮𝗹𝗺𝗮 𝗹𝗶𝘀𝘁𝗲𝘀𝗶𝗻𝗱𝗲𝗸𝗶 𝗯𝗲𝗹𝗶𝗿𝗹𝗶 𝗯𝗶𝗿 𝗺𝘂̈𝘇𝗶𝗴̆𝗶 𝘀𝗶𝗹𝗺𝗲𝗸 𝗶𝗰̧𝗶𝗻 )\n│\n╰𝘃𝗲𝘆𝗮\n│\n╰/delmyplaylist [𝗧𝘂̈𝗿] 𝘁𝘂̈𝗺𝘂̈ ( 𝘁𝘂̈𝗺 𝗰̧𝗮𝗹𝗺𝗮 𝗹𝗶𝘀𝘁𝗲𝘀𝗶𝗻𝗶 𝘀𝗶𝗹𝗺𝗲𝗸 𝗶𝗰̧𝗶𝗻 )\n│\n╰**𝗧𝘂̈𝗿𝗹𝗲𝗿:-**\n{' | '.join(options_Genre)}"
     if len(message.command) < 3:
@@ -198,7 +198,7 @@ async def del_cmd(_, message):
         await message.reply_text("𝗖̧𝗮𝗹𝗺𝗮 𝗟𝗶𝘀𝘁𝗲𝘀𝗶'𝗻𝗱𝗲 𝗯𝗼̈𝘆𝗹𝗲 𝗯𝗶𝗿 𝗺𝘂̈𝘇𝗶𝗴̆𝗶𝗻𝗶𝘇 𝘆𝗼𝗸.")
 
 
-@app.on_message(filters.command("delgroupplaylist") & filters.group)
+@app.on_message(filters.command("hsjsjs") & filters.group)
 @AdminRightsCheck
 async def delgroupplaylist(_, message):
     usage = f"𝗞𝘂𝗹𝗹𝗮𝗻𝗶𝗺𝗶:\n│\n╰/delgroupplaylist [𝗧𝘂̈𝗿] [𝟭-𝟯𝟬 𝗮𝗿𝗮𝘀𝗶 𝘀𝗮𝘆𝗶𝗹𝗮𝗿] ( 𝗖̧𝗮𝗹𝗺𝗮 𝗹𝗶𝘀𝘁𝗲𝘀𝗶𝗻𝗱𝗲𝗸𝗶 𝗯𝗲𝗹𝗶𝗿𝗹𝗶 𝗯𝗶𝗿 𝗺𝘂̈𝘇𝗶𝗴̆𝗶 𝘀𝗶𝗹𝗺𝗲𝗸 𝗶𝗰̧𝗶𝗻 )\n│\n╰𝘃𝗲𝘆𝗮\n│\n╰ /delgroupplaylist [𝗧𝘂̈𝗿] 𝘁𝘂̈𝗺𝘂̈ ( 𝘁𝘂̈𝗺 𝗰̧𝗮𝗹𝗺𝗮 𝗹𝗶𝘀𝘁𝗲𝘀𝗶𝗻𝗶 𝘀𝗶𝗹𝗺𝗲𝗸 𝗶𝗰̧𝗶𝗻 )\n│\n╰**𝗧𝘂̈𝗿𝗹𝗲𝗿:-**\n{' | '.join(options_Genre)}"
