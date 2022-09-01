@@ -233,9 +233,15 @@ home_text_pm = f"""🪧 𝗠𝗲𝗿𝗵𝗮𝗯𝗮 ,
 
 🗯️ 𝗧𝗲𝗵𝗹𝗶𝗸𝗲𝗹𝗶 𝗼̈𝘇𝗲𝗹𝗹𝗶𝗸𝗹𝗲𝗿𝗲 𝘀𝗮𝗵𝗶𝗽 𝗯𝗶𝗿 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗠𝘂̈𝘇𝗶𝗸 + 𝗩𝗶𝗱𝗲𝗼 𝗔𝗸𝗶𝘀̧𝗶 𝗯𝗼𝘁𝘂𝘆𝘂𝗺.
 
+💡 𝗦̧𝘂 𝗞𝗼𝗺𝘂𝘁𝗹𝗮𝗿𝛊 𝗚𝗿𝘂𝗯𝗹𝗮𝗿𝗱𝗮 𝗞𝘂𝗹𝗹𝗮𝗻𝛊𝗻, 𝗕𝗼𝘁𝘂 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲𝘆𝗶𝗽 𝗬𝗼̈𝗻𝗲𝘁𝗶𝗰𝗶 𝗬𝗮𝗽𝘁𝛊𝗸𝘁𝗮𝗻 𝗦𝗼𝗻𝗿𝗮 . . .
+
+
 ✅ 𝗧𝘂̈𝗺 𝗞𝗼𝗺𝘂𝘁𝗹𝗮𝗿 𝗕𝘂𝘁𝗼𝗻𝘂𝗻𝗮 𝗧𝛊𝗸𝗹𝗮𝘆𝛊𝗻 .
 
-💡 𝗡𝗢𝗧 •> 𝗦̧𝘂 𝗞𝗼𝗺𝘂𝘁𝗹𝗮𝗿𝛊 𝗚𝗿𝘂𝗯𝗹𝗮𝗿𝗱𝗮 𝗞𝘂𝗹𝗹𝗮𝗻𝛊𝗻 🤦🏻‍♂️ 𝗕𝗼𝘁𝘂 𝗚𝗿𝘂𝗯𝗮 𝗘𝗸𝗹𝗲𝘆𝗶𝗽 𝗬𝗼̈𝗻𝗲𝘁𝗶𝗰𝗶 𝗬𝗮𝗽𝘁𝛊𝗸𝘁𝗮𝗻 𝗦𝗼𝗻𝗿𝗮 . . ."""
+**💡 ɴᴏᴛ : 30 ᴅᴀᴋɪᴋᴀᴅᴀɴ ғᴀᴢʟᴀ ᴋᴀʀɪşɪᴋ sᴀʀᴋɪʟᴀʀ ᴀᴄ̧ᴍᴀʏɪɴ ʜᴀᴛᴀ ᴠᴇʀɪʀ . . .**
+
+**sᴀʀᴋɪ ᴀᴄ̧ᴍᴀ ʟɪᴍɪᴛɪ : 30 ᴅᴋ**
+**ᴠɪᴅᴇᴏ ᴀᴄᴍᴀ ʟɪᴍɪᴛɪ : 3 sᴀᴀᴛ**"""
 
 
 @app.on_message(filters.command("help") & filters.private)
@@ -370,6 +376,11 @@ async def help_parser(name, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
         """🪧 𝐌𝐞𝐫𝐡𝐚𝐛𝐚 {first_name}
+
+**💡 ɴᴏᴛ : 30 ᴅᴀᴋɪᴋᴀᴅᴀɴ ғᴀᴢʟᴀ ᴋᴀʀɪşɪᴋ sᴀʀᴋɪʟᴀʀ ᴀᴄ̧ᴍᴀʏɪɴ ʜᴀᴛᴀ ᴠᴇʀɪʀ . . .**
+
+**sᴀʀᴋɪ ᴀᴄ̧ᴍᴀ ʟɪᴍɪᴛɪ : 30 ᴅᴋ**
+**ᴠɪᴅᴇᴏ ᴀᴄᴍᴀ ʟɪᴍɪᴛɪ : 3 sᴀᴀᴛ**
 """.format(
             first_name=name
         ),
@@ -392,7 +403,12 @@ async def help_button(client, query):
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
     top_text = f"""🪧 𝐌𝐞𝐫𝐡𝐚𝐛𝐚 {query.from_user.first_name}
- """
+
+**💡 ɴᴏᴛ : 30 ᴅᴀᴋɪᴋᴀᴅᴀɴ ғᴀᴢʟᴀ ᴋᴀʀɪşɪᴋ sᴀʀᴋɪʟᴀʀ ᴀᴄ̧ᴍᴀʏɪɴ ʜᴀᴛᴀ ᴠᴇʀɪʀ . . .**
+
+**sᴀʀᴋɪ ᴀᴄ̧ᴍᴀ ʟɪᴍɪᴛɪ : 30 ᴅᴋ**
+**ᴠɪᴅᴇᴏ ᴀᴄᴍᴀ ʟɪᴍɪᴛɪ : 3 sᴀᴀᴛ**
+"""
     if mod_match:
         module = mod_match.group(1)
         text = (
