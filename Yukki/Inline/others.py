@@ -10,6 +10,10 @@ def others_markup(videoid, user_id):
     db_mem[videoid]["check"] = 1
     buttons = [
         [
+        InlineKeyboardButton("🪧 𝖪𝖺𝗇𝖺𝗅 ", url="t.me/StarBotKanal"),
+        InlineKeyboardButton("🇹🇷 𝖣𝖾𝗌𝗍𝖾𝗄 ", url="t.me/StarBotDestek"),
+        ],
+        [
             InlineKeyboardButton(
                 text="📥 sᴀʀᴋɪ | ᴠɪᴅᴇᴏ 📥",
                 callback_data=f"audio_video_download {videoid}|{user_id}",
