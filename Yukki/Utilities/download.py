@@ -268,15 +268,17 @@ def get_type(type, format, videoid, user_id):
             text=f"• 𝖨̇𝗇𝖽𝗂𝗋 ✅",
             callback_data=f"boom audio||{format}||{videoid}",
         )
-        a2 = InlineKeyboardButton("🇹🇷 𝖣𝖾𝗌𝗍𝖾𝗄 ", url="t.me/StarBotDestek",
-        )
+        a2 = InlineKeyboardButton(
+            text=f"👈🏻",
+            callback_data=f"https://t.me/StarBotKanal"
     else:
         a1 = InlineKeyboardButton(
             text=f"• 𝖨̇𝗇𝖽𝗂𝗋 ✅",
             callback_data=f"boom video||{format}||{videoid}",
         )
         a2 = InlineKeyboardButton(
-            InlineKeyboardButton("🇹🇷 𝖣𝖾𝗌𝗍𝖾𝗄 ", url="t.me/StarBotDestek",
+            text=f"👈🏻",
+            callback_data=f"https://t.me/StarBotKanal",
         )
     key = InlineKeyboardMarkup(
         [
