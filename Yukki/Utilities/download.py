@@ -271,6 +271,7 @@ def get_type(type, format, videoid, user_id):
         a2 = InlineKeyboardButton(
             text=f"👈🏻",
             callback_data=f"https://t.me/StarBotKanal"
+        )
     else:
         a1 = InlineKeyboardButton(
             text=f"• 𝖨̇𝗇𝖽𝗂𝗋 ✅",
