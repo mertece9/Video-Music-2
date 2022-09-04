@@ -53,69 +53,69 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 j += 1
                 if j == 1:
                     a1 = InlineKeyboardButton(
-                        text=f"𝗦̧𝗮𝗿𝗸𝗶 🎵 {humanbytes(x['filesize'])}",
+                        text=f"𝖲̧𝖺𝗋𝗄ı {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
                 if j == 2:
                     a2 = InlineKeyboardButton(
-                        text=f"𝗦̧𝗮𝗿𝗸𝗶 🎵 {humanbytes(x['filesize'])}",
+                        text=f"𝖲̧𝖺𝗋𝗄ı {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
                 if j == 3:
                     a3 = InlineKeyboardButton(
-                        text=f"𝗦̧𝗮𝗿𝗸𝗶 🎵 {humanbytes(x['filesize'])}",
+                        text=f"𝖲̧𝖺𝗋𝗄ı {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
                 if j == 4:
                     a4 = InlineKeyboardButton(
-                        text=f"𝗦̧𝗮𝗿𝗸𝗶 🎵 {humanbytes(x['filesize'])}",
+                        text=f"𝖲̧𝖺𝗋𝗄ı {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
                 if j == 5:
                     a5 = InlineKeyboardButton(
-                        text=f"𝗦̧𝗮𝗿𝗸𝗶 🎵 {humanbytes(x['filesize'])}",
+                        text=f"𝖲̧𝖺𝗋𝗄ı {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
                 if j == 6:
                     a6 = InlineKeyboardButton(
-                        text=f"𝗦̧𝗮𝗿𝗸𝗶 🎵 {humanbytes(x['filesize'])}",
+                        text=f"𝖲̧𝖺𝗋𝗄ı {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
         elif type == "video":
             if str(133) in check:
                 j += 1
                 a1 = InlineKeyboardButton(
-                    text=f"(240)p 📹 {humanbytes(x['filesize'])}",
+                    text=f"240𝗉 / {humanbytes(x['filesize'])}",
                     callback_data=f"ytdata video||{x['format_id']}||{videoid}",
                 )
             if str(134) in check:
                 j += 1
                 a2 = InlineKeyboardButton(
-                    text=f"(360)p 📹 {humanbytes(x['filesize'])}",
+                    text=f"360𝗉 / {humanbytes(x['filesize'])}",
                     callback_data=f"ytdata video||{x['format_id']}||{videoid}",
                 )
             if str(135) in check:
                 j += 1
                 a3 = InlineKeyboardButton(
-                    text=f"(480)p 📹 {humanbytes(x['filesize'])}",
+                    text=f"480𝗉 / {humanbytes(x['filesize'])}",
                     callback_data=f"ytdata video||{x['format_id']}||{videoid}",
                 )
             if str(136) in check:
                 j += 1
                 a4 = InlineKeyboardButton(
-                    text=f"(720)p 📹 {humanbytes(x['filesize'])}",
+                    text=f"720𝗉 / {humanbytes(x['filesize'])}",
                     callback_data=f"ytdata video||{x['format_id']}||{videoid}",
                 )
             if str(137) in check:
                 j += 1
                 a5 = InlineKeyboardButton(
-                    text=f"(1080)p 📹 {humanbytes(x['filesize'])}",
+                    text=f"1080𝗉 / {humanbytes(x['filesize'])}",
                     callback_data=f"ytdata video||{x['format_id']}||{videoid}",
                 )
             if str(313) in check:
                 j += 1
                 a6 = InlineKeyboardButton(
-                    text=f"(2160)p 📹 {humanbytes(x['filesize'])}",
+                    text=f"2160𝗉 / {humanbytes(x['filesize'])}",
                     callback_data=f"ytdata video||{x['format_id']}||{videoid}",
                 )
         else:
@@ -134,11 +134,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="🔙 Geri",
+                        text="🔙 𝖦𝖾𝗋𝗂",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Menüyü Kapat", callback_data=f"close2"
+                        text="🗑 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -152,11 +152,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⇠ Geri Git",
+                        text="⇠ 𝖦𝖾𝗋𝗂",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Menüyü Kapat", callback_data=f"close2"
+                        text="🗑 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -173,11 +173,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⇠ Geri Git",
+                        text="⇠ 𝖦𝖾𝗋𝗂",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Menüyü Kapat", callback_data=f"close2"
+                        text="🗑 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -195,11 +195,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⇠ Geri Git",
+                        text="⇠ 𝖦𝖾𝗋𝗂",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Menüyü Kapat", callback_data=f"close2"
+                        text="🗑 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -220,11 +220,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⇠ Geri Git",
+                        text="⇠ 𝖦𝖾𝗋𝗂",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Menüyü Kapat", callback_data=f"close2"
+                        text="🗑 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -246,11 +246,11 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="⇠ Geri Git",
+                        text="⇠ 𝖦𝖾𝗋𝗂",
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Menüyü Kapat", callback_data=f"close2"
+                        text="🗑 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -265,20 +265,20 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
 def get_type(type, format, videoid, user_id):
     if type == "audio":
         a1 = InlineKeyboardButton(
-            text=f"Şarkı Formu",
+            text=f"𝖲̧𝖺𝗋𝗄ı 𝖥𝗈𝗋𝗆𝗎",
             callback_data=f"boom audio||{format}||{videoid}",
         )
         a2 = InlineKeyboardButton(
-            text=f"Belge Formu",
+            text=f"𝖡𝖾𝗅𝗀𝖾 𝖥𝗈𝗋𝗆𝗎",
             callback_data=f"boom docaudio||{format}||{videoid}",
         )
     else:
         a1 = InlineKeyboardButton(
-            text=f"Video Formu",
+            text=f"𝖵𝗂𝖽𝖾𝗈 𝖥𝗈𝗋𝗆𝗎",
             callback_data=f"boom video||{format}||{videoid}",
         )
         a2 = InlineKeyboardButton(
-            text=f"Belge Formu",
+            text=f"𝖡𝖾𝗅𝗀𝖾 𝖥𝗈𝗋𝗋𝗆𝗎",
             callback_data=f"boom docvideo||{format}||{videoid}",
         )
     key = InlineKeyboardMarkup(
