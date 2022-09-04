@@ -96,7 +96,7 @@ async def boom(_, CallbackQuery):
     user_id = CallbackQuery.from_user.id
     type, format_id, videoid = callback_request.split("||")
     mystic = await CallbackQuery.edit_message_text(
-        "𝗂𝗇𝖽𝗂𝗋𝗆𝖾 𝖻𝖺𝗌̧𝗅𝖺𝖽ı\n│\n╰𝗅𝗎̈𝗍𝖿𝖾𝗇 𝖡𝖾𝗄𝗅𝖾 ...",
+        "• 𝖨̇𝗇𝖽𝗂𝗋𝗂𝗅𝗂𝗒𝗈𝗋 ...",
         reply_markup=inl,
     )
     yturl = f"https://www.youtube.com/watch?v={videoid}"
@@ -226,7 +226,7 @@ async def send_file(
     CallbackQuery, med, filename, videoid, user_id, link, channel
 ):
     await CallbackQuery.edit_message_text(
-        "• 𝖫𝗎̈𝗍𝖿𝖾𝗇 𝖡𝖾𝗄𝗅𝖾𝗒𝗂𝗇 ...",
+        "• 𝖸𝗎̈𝗄𝗅𝖾𝗇𝗂𝗒𝗈𝗋 ...",
         reply_markup=upl,
     )
     try:
