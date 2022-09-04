@@ -51,18 +51,18 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
         if type == "audio":
             if "audio" in check:
                 j += 1
-                if j == 1:
-                    a1 = InlineKeyboardButton(
+                if j == 4:
+                    a4 = InlineKeyboardButton(
                         text=f"𝖲̧𝖺𝗋𝗄ı {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
-                if j == 2:
-                    a2 = InlineKeyboardButton(
+                if j == 5:
+                    a5 = InlineKeyboardButton(
                         text=f"𝖲̧𝖺𝗋𝗄ı {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
-                if j == 3:
-                    a3 = InlineKeyboardButton(
+                if j == 6:
+                    a6 = InlineKeyboardButton(
                         text=f"𝖲̧𝖺𝗋𝗄ı {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
                     )
@@ -137,6 +137,79 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                 ],
                 [
                     a3,
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="⇠ 𝖦𝖾𝗋𝗂",
+                        callback_data=f"good {videoid}|{user_id}",
+                    ),
+                    InlineKeyboardButton(
+                        text="🗑 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
+                    ),
+                ],
+            ]
+        )
+    elif j == 4:
+        key = InlineKeyboardMarkup(
+            [
+                [
+                    a1,
+                    a2,
+                ],
+                [
+                    a3,
+                    a4,
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="⇠ 𝖦𝖾𝗋𝗂",
+                        callback_data=f"good {videoid}|{user_id}",
+                    ),
+                    InlineKeyboardButton(
+                        text="🗑 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
+                    ),
+                ],
+            ]
+        )
+    elif j == 5:
+        key = InlineKeyboardMarkup(
+            [
+                [
+                    a1,
+                    a2,
+                ],
+                [
+                    a3,
+                    a4,
+                ],
+                [
+                    a5,
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="⇠ 𝖦𝖾𝗋𝗂",
+                        callback_data=f"good {videoid}|{user_id}",
+                    ),
+                    InlineKeyboardButton(
+                        text="🗑 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
+                    ),
+                ],
+            ]
+        )
+    elif j == 6:
+        key = InlineKeyboardMarkup(
+            [
+                [
+                    a1,
+                    a2,
+                ],
+                [
+                    a3,
+                    a4,
+                ],
+                [
+                    a5,
+                    a6,
                 ],
                 [
                     InlineKeyboardButton(
