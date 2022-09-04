@@ -50,7 +50,8 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
         check = x["format"]
         if type == "audio":
             if "audio" in check:
-if j == 1:
+                j += 1
+                if j == 1:
                     a1 = InlineKeyboardButton(
                         text=f"𝖲̧𝖺𝗋𝗄ı {humanbytes(x['filesize'])}",
                         callback_data=f"ytdata audio||{x['format_id']}||{videoid}",
