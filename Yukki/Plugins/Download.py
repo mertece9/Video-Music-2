@@ -58,11 +58,11 @@ async def ytdata(_, CallbackQuery):
 
 
 inl = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text="𝗂𝗇𝖽𝗂𝗋𝗂𝗅𝗂𝗒𝗈𝗋...", callback_data=f"down")]]
+    [[InlineKeyboardButton(text="𝖨̇𝗇𝖽𝗂𝗋𝗂𝗅𝗂𝗒𝗈𝗋...", callback_data=f"down")]]
 )
 
 upl = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text="𝗒𝗎𝗄𝗅𝖾𝗇𝗂𝗒𝗈𝗋...", callback_data=f"down")]]
+    [[InlineKeyboardButton(text="𝖸𝗎̈𝗄𝗅𝖾𝗇𝗂𝗒𝗈𝗋...", callback_data=f"down")]]
 )
 
 
@@ -108,11 +108,10 @@ async def boom(_, CallbackQuery):
         thumb_image_path = result["thumbnails"][0]["url"]
         channel = channel = result["channel"]["name"]
         fetched = f"""
-❇️ 𝗜̇𝘀𝗶𝗺:  **{title}**
 ⏳ 𝗦𝘂̈𝗿𝗲𝘀𝗶: **{duration}** 𝗗𝗮𝗸𝗶𝗸𝗮
 🔗 𝗩𝗶𝗱𝗲𝗼 𝗕𝗮𝗴̆𝗹𝗮𝗻𝘁𝗶𝘀𝗶: [Link]({yturl})
 
-•> [𝖬𝗉3 𝖬𝗎̈𝗓𝗂𝗄 𝖡𝗈𝗍](https://t.me/Mp3MuzikBot) 𝖳𝖺𝗋𝖺𝖿𝗂𝗇𝖽𝖺𝗇 !"""
+•> [𝖬𝗉3 𝖬𝗎̈𝗓𝗂𝗄 𝖡𝗈𝗍](https://t.me/Mp3MuzikBot) 𝖣𝖾𝗌𝗍𝖾𝗄𝗅𝖾𝗒𝖾𝗇 !"""
     filext = "%(title)s.%(ext)s"
     userdir = os.path.join(os.getcwd(), "downloads", str(user_id))
     if not os.path.isdir(userdir):
@@ -227,7 +226,7 @@ async def send_file(
     CallbackQuery, med, filename, videoid, user_id, link, channel
 ):
     await CallbackQuery.edit_message_text(
-        "𝗂𝗇𝖽𝗂𝗋𝗆𝖾 𝖻𝖺𝗌̧𝗅𝖺𝖽ı\n│\n╰𝗅𝗎̈𝗍𝖿𝖾𝗇 𝖡𝖾𝗄𝗅𝖾 ......",
+        "• 𝖫𝗎̈𝗍𝖿𝖾𝗇 𝖡𝖾𝗄𝗅𝖾𝗒𝗂𝗇 ...",
         reply_markup=upl,
     )
     try:
