@@ -58,11 +58,11 @@ async def ytdata(_, CallbackQuery):
 
 
 inl = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text="𝗜̇𝗻𝗱𝗶𝗿𝗶𝗹𝗶𝘆𝗼𝗿......", callback_data=f"down")]]
+    [[InlineKeyboardButton(text="𝗂𝗇𝖽𝗂𝗋𝗂𝗅𝗂𝗒𝗈𝗋...", callback_data=f"down")]]
 )
 
 upl = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text="𝗬𝘂̈𝗸𝗹𝗲𝗻𝗶𝘆𝗼𝗿......", callback_data=f"down")]]
+    [[InlineKeyboardButton(text="𝗒𝗎𝗄𝗅𝖾𝗇𝗂𝗒𝗈𝗋...", callback_data=f"down")]]
 )
 
 
@@ -70,15 +70,15 @@ def inl_mark(videoid, user_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="𝗞𝗮𝗿𝘀̧𝗶𝗱𝗮𝗻 𝗬𝘂̈𝗸𝗹𝗲𝗺𝗲 𝘃𝗲𝘆𝗮 𝗞𝗮𝗿𝘀̧𝗶𝘆𝗮 𝗬𝘂̈𝗸𝗹𝗲𝗺𝗲 𝗕𝗮𝘀̧𝗮𝗿𝗶𝘀𝗶𝘇 𝗢𝗹𝗱𝘂......", callback_data=f"down"
+                text="• 𝖸𝗎𝗄𝗅𝖾𝗇𝖽𝗂 ✅", callback_data=f"down"
             )
         ],
         [
             InlineKeyboardButton(
-                text="🔙  Geri Git", callback_data=f"good {videoid}|{user_id}"
+                text="• 𝖦𝖾𝗋𝗂", callback_data=f"good {videoid}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="❌ Menüyü Kapat", callback_data=f"close2"
+                text="• 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
             ),
         ],
     ]
@@ -96,7 +96,7 @@ async def boom(_, CallbackQuery):
     user_id = CallbackQuery.from_user.id
     type, format_id, videoid = callback_request.split("||")
     mystic = await CallbackQuery.edit_message_text(
-        "𝗜̇𝗻𝗱𝗶𝗿𝗺𝗲 𝗕𝗮𝘀̧𝗹𝗮𝗱𝗶\n│\n╰𝗜̇𝗻𝗱𝗶𝗿𝗺𝗲 𝗵𝗶𝘇𝗶 𝘆𝗮𝘃𝗮𝘀̧ 𝗼𝗹𝗮𝗯𝗶𝗹𝗶𝗿. 𝗗𝗮𝘆𝗮𝗻 𝗹𝘂̈𝘁𝗳𝗲𝗻..",
+        "𝗂𝗇𝖽𝗂𝗋𝗆𝖾 𝖻𝖺𝗌̧𝗅𝖺𝖽ı\n│\n╰𝗅𝗎̈𝗍𝖿𝖾𝗇 𝖡𝖾𝗄𝗅𝖾 ...",
         reply_markup=inl,
     )
     yturl = f"https://www.youtube.com/watch?v={videoid}"
@@ -112,7 +112,7 @@ async def boom(_, CallbackQuery):
 ⏳ 𝗦𝘂̈𝗿𝗲𝘀𝗶: **{duration}** 𝗗𝗮𝗸𝗶𝗸𝗮
 🔗 𝗩𝗶𝗱𝗲𝗼 𝗕𝗮𝗴̆𝗹𝗮𝗻𝘁𝗶𝘀𝗶: [Link]({yturl})
 
-•> {MUSIC_BOT_NAME} 𝖳𝖺𝗋𝖺𝖿𝗂𝗇𝖽𝖺𝗇 !"""
+•> [𝖬𝗉3 𝖬𝗎̈𝗓𝗂𝗄 𝖡𝗈𝗍](https://t.me/Mp3MuzikBot) 𝖳𝖺𝗋𝖺𝖿𝗂𝗇𝖽𝖺𝗇 !"""
     filext = "%(title)s.%(ext)s"
     userdir = os.path.join(os.getcwd(), "downloads", str(user_id))
     if not os.path.isdir(userdir):
@@ -216,18 +216,11 @@ async def boom(_, CallbackQuery):
         print("med bulunamadı")
 
 
-def p_mark(link, channel):
-    buttons = [
-        [InlineKeyboardButton(text="𝗬𝗼𝘂𝘁𝘂𝗯𝗲'𝗱𝗮 𝗜̇𝘇𝗹𝗲", url=f"{link}")],
-    ]
-    return buttons
-
-
 async def send_file(
     CallbackQuery, med, filename, videoid, user_id, link, channel
 ):
     await CallbackQuery.edit_message_text(
-        "𝐊𝐚𝐫𝐬̧𝐢𝐲𝐚 𝐘𝐮̈𝐤𝐥𝐞𝐦𝐞 𝐁𝐚𝐬̧𝐥𝐚𝐭𝐢𝐥𝐝𝐢\n│\n╰𝐘𝐮̈𝐤𝐥𝐞𝐦𝐞 𝐡𝐢𝐳𝐢 𝐲𝐚𝐯𝐚𝐬̧ 𝐨𝐥𝐚𝐛𝐢𝐥𝐢𝐫. 𝐋𝐮̈𝐭𝐟𝐞𝐧 𝐛𝐞𝐤𝐥𝐞𝐲𝐢𝐧...",
+        "𝗂𝗇𝖽𝗂𝗋𝗆𝖾 𝖻𝖺𝗌̧𝗅𝖺𝖽ı\n│\n╰𝗅𝗎̈𝗍𝖿𝖾𝗇 𝖡𝖾𝗄𝗅𝖾 ......",
         reply_markup=upl,
     )
     try:
