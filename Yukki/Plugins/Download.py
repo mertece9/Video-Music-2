@@ -216,6 +216,13 @@ async def boom(_, CallbackQuery):
         print("med bulunamadı")
 
 
+def p_mark(link, channel):
+    buttons = [
+        [InlineKeyboardButton(text="🇹🇷 𝖡𝗂𝗅𝗀𝗂 𝖪𝖺𝗇𝖺𝗅ı", url=f"https://t.me/StarBotKanal")],
+    ]
+    return buttons
+
+
 async def send_file(
     CallbackQuery, med, filename, videoid, user_id, link, channel
 ):
