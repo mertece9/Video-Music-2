@@ -265,21 +265,21 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
 def get_type(type, format, videoid, user_id):
     if type == "audio":
         a1 = InlineKeyboardButton(
-            text=f"𝖲̧𝖺𝗋𝗄ı 𝖥𝗈𝗋𝗆𝗎",
+            text=f"𝖲̧𝖺𝗋𝗄ı 𝖨̇𝗇𝖽𝗂𝗋",
             callback_data=f"boom audio||{format}||{videoid}",
         )
         a2 = InlineKeyboardButton(
-            text=f"𝖡𝖾𝗅𝗀𝖾 𝖥𝗈𝗋𝗆𝗎",
-            callback_data=f"boom docaudio||{format}||{videoid}",
+            text=f"🪧 𝖣𝖾𝗌𝗍𝖾𝗄",
+            callback_data=f"https://t.me/StarBotDestek",
         )
     else:
         a1 = InlineKeyboardButton(
-            text=f"𝖵𝗂𝖽𝖾𝗈 𝖥𝗈𝗋𝗆𝗎",
+            text=f"𝖵𝗂𝖽𝖾𝗈 𝖨̇𝗇𝖽𝗂𝗋",
             callback_data=f"boom video||{format}||{videoid}",
         )
         a2 = InlineKeyboardButton(
-            text=f"𝖡𝖾𝗅𝗀𝖾 𝖥𝗈𝗋𝗋𝗆𝗎",
-            callback_data=f"boom docvideo||{format}||{videoid}",
+            text=f"🪧 𝖣𝖾𝗌𝗍𝖾𝗄",
+            callback_data=f"https://t.me/StarBotDestek",
         )
     key = InlineKeyboardMarkup(
         [
@@ -289,11 +289,11 @@ def get_type(type, format, videoid, user_id):
             ],
             [
                 InlineKeyboardButton(
-                    text="⇠ Geri Git",
+                    text="⇠ 𝖦𝖾𝗋𝗂",
                     callback_data=f"good {videoid}|{user_id}",
                 ),
                 InlineKeyboardButton(
-                    text="🗑 Menüyü Kapat", callback_data=f"close2"
+                    text="🗑 𝖪𝖺𝗉𝖺𝗍", callback_data=f"close2"
                 ),
             ],
         ]
