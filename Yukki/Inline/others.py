@@ -11,7 +11,7 @@ def others_markup(videoid, user_id):
     buttons = [
         [
         InlineKeyboardButton("🪧 𝖪𝖺𝗇𝖺𝗅 ", url="t.me/StarBotKanal"),
-        InlineKeyboardButton("🇹🇷 𝖣𝖾𝗌𝗍𝖾𝗄 ", url="t.me/StarBotDestek"),
+        InlineKeyboardButton("🇹🇷 𝖣𝖾𝗌𝗍𝖾𝗄 ", url="t.me/Sohbetfanonlinee"),
         ],
         [
             InlineKeyboardButton(
