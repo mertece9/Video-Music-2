@@ -70,15 +70,11 @@ __HELP__ = """
 🪧 **ᴏʀɴᴇᴋ ʀᴇɴᴋʟᴇʀ** •>
 **blue , black , red , green , grey , orange , pink , yellow .**
 
-
-**sᴀʀᴋɪ ᴀᴄ̧ᴍᴀ ʟɪᴍɪᴛɪ : 30 ᴅᴋ**
-**ᴠɪᴅᴇᴏ ᴀᴄᴍᴀ ʟɪᴍɪᴛɪ : 3 sᴀᴀᴛ**
-
 """
 
 
 @app.on_message(
-    filters.command(["durdur", "atla", "devam", "son",])
+    filters.command(["durdur", "atla", "devam", "son"])
     & filters.group
 )
 @AdminRightsCheck
