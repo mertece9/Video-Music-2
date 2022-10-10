@@ -5,8 +5,8 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
 def check_markup(user_name, user_id, videoid):
     buttons = [
         [
-        InlineKeyboardButton("🪧 𝖪𝖺𝗇𝖺𝗅 ", url="t.me/StarBotKanal"),
-        InlineKeyboardButton("🇹🇷 𝖣𝖾𝗌𝗍𝖾𝗄 ", url="t.me/Sohbetfanonlinee"),
+        InlineKeyboardButton("🪧 𝖪𝖺𝗇𝖺𝗅 ", url="t.me/ProTubeSupport"),
+        InlineKeyboardButton("🇹🇷 𝖣𝖾𝗌𝗍𝖾𝗄 ", url="t.me/sohbetmuhabbetw"),
         ],
         [InlineKeyboardButton(text="• 𝖪𝖺𝗉𝖺𝗍", callback_data="close")],
     ]
@@ -16,8 +16,8 @@ def check_markup(user_name, user_id, videoid):
 def playlist_markup(user_name, user_id, videoid):
     buttons = [
         [
-        InlineKeyboardButton("🪧 𝖪𝖺𝗇𝖺𝗅 ", url="t.me/StarBotKanal"),
-        InlineKeyboardButton("🇹🇷 𝖣𝖾𝗌𝗍𝖾𝗄 ", url="t.me/Sohbetfanonlinee"),
+        InlineKeyboardButton("🪧 𝖪𝖺𝗇𝖺𝗅 ", url="t.me/ProTubeSupport"),
+        InlineKeyboardButton("🇹🇷 𝖣𝖾𝗌𝗍𝖾𝗄 ", url="t.me/sohbetmuhabbetw"),
         ],
         [InlineKeyboardButton(text="• 𝖪𝖺𝗉𝖺𝗍", callback_data="close")],
     ]
