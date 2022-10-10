@@ -111,7 +111,7 @@ async def boom(_, CallbackQuery):
 ⏳ 𝗦𝘂̈𝗿𝗲𝘀𝗶: **{duration}** 𝗗𝗮𝗸𝗶𝗸𝗮
 🔗 𝗩𝗶𝗱𝗲𝗼 𝗕𝗮𝗴̆𝗹𝗮𝗻𝘁𝗶𝘀𝗶: [Link]({yturl})
 
-•> [𝖬𝗉3 𝖬𝗎̈𝗓𝗂𝗄 𝖡𝗈𝗍](https://t.me/Mp3MuzikBot) 𝖣𝖾𝗌𝗍𝖾𝗄𝗅𝖾𝗒𝖾𝗇 !"""
+•> [Vip 𝖬𝗎̈𝗓𝗂𝗄 𝖡𝗈𝗍](https://t.me/VipMuzikRoBot) 𝖣𝖾𝗌𝗍𝖾𝗄𝗅𝖾𝗒𝖾𝗇 !"""
     filext = "%(title)s.%(ext)s"
     userdir = os.path.join(os.getcwd(), "downloads", str(user_id))
     if not os.path.isdir(userdir):
