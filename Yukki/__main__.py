@@ -115,8 +115,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_1.join_chat("StarBotDestek")
-            await ASS_CLI_1.join_chat("StarBotKanal")
+            await ASS_CLI_1.join_chat("ProTubeSupport")
+            await ASS_CLI_1.join_chat("sohbetmuhabbetw")
         except:
             pass
         console.print(f"├[red] Asistan 1 Olarak Başladı {ASSNAME1}!")
@@ -134,8 +134,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_2.join_chat("StarBotDestek")
-            await ASS_CLI_2.join_chat("StarBotKanal")
+            await ASS_CLI_2.join_chat("ProTubeSupport")
+            await ASS_CLI_2.join_chat("sohbetmuhabbetw")
         except:
             pass
         console.print(f"├[red] Asistan 2 Olarak Başladı {ASSNAME2}!")
@@ -153,8 +153,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_3.join_chat("StarBotDestek")
-            await ASS_CLI_3.join_chat("StarBotKanal")
+            await ASS_CLI_3.join_chat("ProTubeSupport")
+            await ASS_CLI_3.join_chat("sohbetmuhabbetw")
         except:
             pass
         console.print(f"├[red] Asistan 3 Olarak Başladı {ASSNAME3}!")
@@ -172,8 +172,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_4.join_chat("StarBotDestek")
-            await ASS_CLI_4.join_chat("StarBotKanal")
+            await ASS_CLI_4.join_chat("ProTubeSupport")
+            await ASS_CLI_4.join_chat("sohbetmuhabbetw")
         except:
             pass
         console.print(f"├[red] Asistan 4 Olarak Başladı {ASSNAME4}!")
@@ -191,8 +191,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_5.join_chat("StarBotDestek")
-            await ASS_CLI_5.join_chat("StarBotKanal")
+            await ASS_CLI_5.join_chat("ProTubeSupport")
+            await ASS_CLI_5.join_chat("sohbetmuhabbetw")
         except:
             pass
         console.print(f"├[red] Asistan 5 Olarak Başladı {ASSNAME5}!")
@@ -210,11 +210,11 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await LOG_CLIENT.join_chat("Sohbetskyfall")
-            await LOG_CLIENT.join_chat("Sohbetdestek")
+            await LOG_CLIENT.join_chat("ProTubeSupport")
+            await LOG_CLIENT.join_chat("sohbetmuhabbetw")
         except:
             pass
-    console.print(f"└[red] Efsane Müzik Bot Önyükleme tamamlandı.")
+    console.print(f"└[red] Vip Müzik Bot Önyükleme tamamlandı.")
     if STRING1 != "None":
         await pytgcalls1.start()
     if STRING2 != "None":
